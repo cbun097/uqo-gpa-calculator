@@ -8,34 +8,29 @@ import {
   Heading,
   HStack,
   Input,
+  Link,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import {
   accumulatedCredits,
-  calculateGPA,
+  semesterCalculateGPA,
   calculateGradePoints,
+  finalGPA,
+  finalPoints,
   IFormInput,
+  initialValues,
+  semesterGradePoints,
+  totalCredit,
 } from "./utils";
 
-const initialValues: IFormInput = {
-  currentGPA: 0,
-  currentCreditsEarned: 0,
-  // TEMP
-  creditsEarned1: 0,
-  creditsEarned2: 0,
-  creditsEarned3: 0,
-  creditsEarned4: 0,
-  creditsEarned5: 0,
-};
 
 function App() {
   const { register, handleSubmit } = useForm<IFormInput>();
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const onSubmit = async (data: IFormInput) => {
-    console.log(data);
     setForm(data);
   };
   return (
@@ -64,6 +59,11 @@ function App() {
             />
           </FormControl>
 
+          <Container m={1}>
+            <Text>Ce semestre</Text>
+            <Text>Les cours pris cette session ou les cours prévus</Text>
+          </Container>
+
           <HStack spacing="24px" marginTop="3">
             <FormControl id="credits-earned">
               <FormLabel>Crédits: </FormLabel>
@@ -79,8 +79,8 @@ function App() {
               <FormLabel>Résultat: </FormLabel>
               <Input
                 type="text"
-                name="result-earned-1"
-                id="result-earned-1"
+                name="resultEarned1"
+                id="resultEarned1"
                 ref={register}
               />
             </FormControl>
@@ -101,8 +101,8 @@ function App() {
               <FormLabel>Résultat: </FormLabel>
               <Input
                 type="text"
-                name="result-earned-2"
-                id="result-earned-2"
+                name="resultEarned2"
+                id="resultEarned2"
                 ref={register}
               />
             </FormControl>
@@ -122,8 +122,8 @@ function App() {
               <FormLabel>Résultat: </FormLabel>
               <Input
                 type="text"
-                name="result-earned-3"
-                id="result-earned-3"
+                name="resultEarned3"
+                id="resultEarned3"
                 ref={register}
               />
             </FormControl>
@@ -143,8 +143,8 @@ function App() {
               <FormLabel>Résultat: </FormLabel>
               <Input
                 type="text"
-                name="result-earned-4"
-                id="result-earned-4"
+                name="resultEarned4"
+                id="resultEarned4"
                 ref={register}
               />
             </FormControl>
@@ -164,25 +164,27 @@ function App() {
               <FormLabel>Résultat: </FormLabel>
               <Input
                 type="text"
-                name="result-earned-5"
-                id="result-earned-5"
+                name="resultEarned5"
+                id="resultEarned5"
                 ref={register}
               />
             </FormControl>
           </HStack>
 
-          <Stack direction="row" spacing={4} padding="5" align="center">
+          <Stack direction="row" spacing={4} padding="5" justify="center">
             <Button type="submit" onClick={() => setBtnClicked(true)}>
               Calculer
             </Button>
-            <Button type="reset">Réinitialiser</Button>
-            <Button>Ajouter une rangée</Button>
+            <Button type="reset" onClick={() => setBtnClicked(false)}>
+              Réinitialiser
+            </Button>
+            {/* <Button>Ajouter une rangée</Button> */}
           </Stack>
         </form>
       </Container>
       {/* for testing purposes */}
       {/* <pre>{JSON.stringify(formState, null, 2)}</pre> */}
-     {btnClicked && (
+      {btnClicked && (
         <Container>
           <Text fontSize="lg" as="b">
             Résultats:
@@ -200,7 +202,7 @@ function App() {
               )}
             </Text>
             <Text>
-              Moyenne cumulative globale sur 4,30:&nbsp; {calculateGPA()}
+              Moyenne cumulative globale sur 4,30:&nbsp; {form?.currentGPA}
             </Text>
           </Container>
 
@@ -210,17 +212,13 @@ function App() {
             </Text>
             <Text>
               Crédits:&nbsp;
-              {accumulatedCredits(
-                form?.creditsEarned1,
-                form?.creditsEarned2,
-                form?.creditsEarned3,
-                form?.creditsEarned4,
-                form?.creditsEarned5
-              )}
+              {accumulatedCredits(form)}
             </Text>
-            <Text>Notes pointage:&nbsp;</Text>
+            <Text>Notes pointage:&nbsp;
+              {semesterGradePoints(form)}
+            </Text>
             <Text>
-              Moyenne cumulative globale sur 4,30:&nbsp; {calculateGPA()}
+              Moyenne cumulative globale sur 4,30:&nbsp; {semesterCalculateGPA(form)}
             </Text>
           </Container>
 
@@ -228,18 +226,41 @@ function App() {
             <Text fontSize="md" as="b">
               Calcul estimé - total
             </Text>
-            <Text>Total crédits:&nbsp; </Text>
-            <Text>Total notes pointage: &nbsp;</Text>
+            <Text>Total crédits:&nbsp; 
+              {totalCredit(form)}
+            </Text>
+            <Text>Total notes pointage: &nbsp;
+              {finalPoints(form)}
+            </Text>
             <Text>
-              Résultat moyenne cumulative globale sur 4,30:&nbsp;{" "}
-              {calculateGPA()}
+              Résultat moyenne cumulative globale sur 4,30:&nbsp;
+              {finalGPA(form)}
             </Text>
             <Button>Grade de l'UQO</Button>
           </Container>
         </Container>
-     )}
+      )}
       <Container centerContent marginTop={4} marginBottom={3}>
-        <Text>Code source: Github</Text>
+        <Text>
+          Lien source:&nbsp;
+          <Link
+            color="#2C5282"
+            isExternal
+            href="https://uqo.ca/sites/default/files/fichiers-uqo/departement-education/politiqueevaluationapprentissages.pdf"
+          >
+            UQO notes
+          </Link>
+        </Text>
+        <Text>
+          Code source:&nbsp;
+          <Link
+            color="#2C5282"
+            isExternal
+            href="https://github.com/cbun097/uqo-gpa-calculator"
+          >
+            Github
+          </Link>
+        </Text>
         <Text>© 2020 made by Claire</Text>
       </Container>
     </div>
