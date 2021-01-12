@@ -17,6 +17,7 @@ import {
   Tr,
   Th,
   Link,
+  Box,
 } from '@chakra-ui/react';
 
 export function ModalTableGrade() {
@@ -26,12 +27,13 @@ export function ModalTableGrade() {
     <>
       <Button onClick={onOpen}>Ouvrir tableau de note UQO</Button>
 
-      <Modal onClose={onClose} isOpen={isOpen} scrollBehavior="outside" isCentered>
+      <Modal onClose={onClose} isOpen={isOpen} blockScrollOnMount={false} isCentered>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Tableau de notes</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
+            <Box h={[400,500,680]} overflowX="auto">
             <Table size="sm" variant="simple">
               <TableCaption>
                 Lien source:&nbsp;
@@ -113,6 +115,7 @@ export function ModalTableGrade() {
                 </Tr>
               </Tbody>
             </Table>
+            </Box>
           </ModalBody>
           <ModalFooter>
             <Button onClick={onClose}>Close</Button>
