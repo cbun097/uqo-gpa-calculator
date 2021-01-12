@@ -15,13 +15,13 @@ job:
       - uses: actions/checkout@v1
 
       - name: Install dependencies
-      run: yarn
+        run: yarn
 
       - name: Build
-      run: yarn build
+        run: yarn build
 
       - name: Linting
-      run: yarn run lint
+        run: yarn run lint
 
       - name: Format
-      run: yarn format
+        run: yarn format
