@@ -1,3 +1,6 @@
+//FIXME:
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+
 export interface IFormInput {
   currentGPA: number;
   currentCreditsEarned: number;
@@ -61,22 +64,24 @@ export function accumulatedCredits(formData: IFormInput): number {
 }
 
 /**
- * Fonction qui convertit le result en lettre obtenue en point
+ * Fonction qui convertit le resultat en lettre obtenue en point
  * @param input
  */
 export function convertLetterToPoints(input: string) {
+  // eslint-disable-next-line
   const letterIndex: any = notationList.indexOf(input);
   return pointsList[letterIndex];
 }
 
 /**
- *
+ * Calculer les points accumulates selon le resultat obtenu
  * @param credits
  * @param results
  */
 export function semesterGradePoints(formData: IFormInput) {
   let sum = 0;
   let total = 0;
+  // eslint-disable-next-line
   const results: any[] = [
     formData.resultEarned1,
     formData.resultEarned2,
@@ -84,6 +89,7 @@ export function semesterGradePoints(formData: IFormInput) {
     formData.resultEarned4,
     formData.resultEarned5,
   ];
+  // eslint-disable-next-line
   const credits: any[] = [
     formData.creditsEarned1,
     formData.creditsEarned2,
@@ -91,9 +97,9 @@ export function semesterGradePoints(formData: IFormInput) {
     formData.creditsEarned4,
     formData.creditsEarned5,
   ];
-  results.forEach((element) => {
+  results.forEach(element => {
     const value = convertLetterToPoints(element.toString());
-    credits.forEach((e) => {
+    credits.forEach(e => {
       total = value * e;
     });
     sum += total;
@@ -102,7 +108,8 @@ export function semesterGradePoints(formData: IFormInput) {
 }
 
 /**
- *
+ * Calcule du GPA estime
+ * semester points/ accumalated credits
  * @param gpa
  * @param credits
  */
@@ -112,20 +119,28 @@ export function semesterCalculateGPA(formData: IFormInput): number {
   return Number(opp);
 }
 
-export function totalCredit(results: IFormInput): number {
+/**
+ * Calculer le total des credits
+ * Current credit + accumulated credits
+ * @param results
+ */
+export function totalCredits(results: IFormInput): number {
   const accCredit: number = accumulatedCredits(results);
   return Number(results.currentCreditsEarned) + accCredit;
 }
 
+/**
+ * Calculer les points totaux
+ * Current pts + accumulated points
+ * @param results
+ */
 export function finalPoints(results: IFormInput): number {
-  return (
-    calculateGradePoints(results.currentCreditsEarned, results.currentGPA) +
-    Number(semesterGradePoints(results))
-  );
+  return calculateGradePoints(results.currentCreditsEarned, results.currentGPA) + Number(semesterGradePoints(results));
 }
 
 /**
- *
+ * Calculer le GPA final
+ * (Current GPA + Estimated GPA) / 2
  * @param results
  */
 export function finalGPA(results: IFormInput): number {
