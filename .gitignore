@@ -11,3 +11,5 @@ build/
 
 node_modules/
 yarn.lock
+src/react-app-env.d.ts
+src/reportWebVitals.ts
