@@ -2,13 +2,12 @@ name: Build frontend
 
 on:
   push:
-    branches: 
+    branches:
       - main
       - develop
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
