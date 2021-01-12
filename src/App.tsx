@@ -14,7 +14,7 @@ import {
   IFormInput,
   initialValues,
   semesterGradePoints,
-  totalCredit,
+  totalCredits,
 } from './utils';
 import { ModalTableGrade } from './modal-table-grade';
 import { Footer } from './Footer';
@@ -170,7 +170,7 @@ function App() {
             </Text>
             <Text>
               Total crédits:&nbsp;
-              {totalCredit(form)}
+              {totalCredits(form)}
             </Text>
             <Text>
               Total notes pointage: &nbsp;

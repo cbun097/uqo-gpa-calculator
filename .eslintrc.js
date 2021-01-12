@@ -5,7 +5,6 @@ module.exports = {
     node: true, // Allows for the use of predefined global variables for Node.js (module, process, etc.)
   },
   extends: [
-    'react-app', // Use the recommended rules from eslint-config-react-app (bundled with Create React App)
     'eslint:recommended', // Use the recommened rules from eslint
     'plugin:@typescript-eslint/recommended', // Use the recommended rules from @typescript-eslint/eslint-plugin
     'plugin:react/recommended', // Use the recommended rules from eslint-plugin-react
