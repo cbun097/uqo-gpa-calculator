@@ -26,6 +26,13 @@ function App() {
   const onSubmit = async (data: IFormInput) => {
     setForm(data);
   };
+  const submitCalcul = () => {
+    setBtnClicked(true);
+    ReactGA.event({
+      category: 'Submit',
+      action: 'Calculate GPA',
+    });
+  };
 
   useEffect(() => {
     ReactGA.initialize('G-115SPZX12W1');
@@ -111,7 +118,7 @@ function App() {
           </HStack>
 
           <Stack direction='row' spacing={4} padding='5' justify='center'>
-            <Button type='submit' onClick={() => setBtnClicked(true)}>
+            <Button type='submit' onClick={() => submitCalcul()}>
               Calculer
             </Button>
             <Button type='reset' onClick={() => setBtnClicked(false)}>
