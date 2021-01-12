@@ -3,20 +3,20 @@ import { Container, Divider, Link, Text } from '@chakra-ui/react';
 
 export const Footer: React.FC = () => (
   <Container centerContent marginTop={4} marginBottom={3}>
-    <Divider orientation="horizontal" />
+    <Divider orientation='horizontal' />
     <Text>
       Lien source:&nbsp;
       <Link
-        color="#2C5282"
+        color='#2C5282'
         isExternal
-        href="https://uqo.ca/sites/default/files/fichiers-uqo/departement-education/politiqueevaluationapprentissages.pdf"
+        href='https://uqo.ca/sites/default/files/fichiers-uqo/departement-education/politiqueevaluationapprentissages.pdf'
       >
         UQO notes
       </Link>
     </Text>
     <Text>
       Code source:&nbsp;
-      <Link color="#2C5282" isExternal href="https://github.com/cbun097/uqo-gpa-calculator">
+      <Link color='#2C5282' isExternal href='https://github.com/cbun097/uqo-gpa-calculator'>
         Github
       </Link>
     </Text>
