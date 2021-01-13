@@ -1,15 +1,15 @@
 # binaries
+node_modules/
+build/
 bin/
 dist/
 lib/
+yarn.lock
 
 # Optional eslint cache
 .eslintcache
-
-# build
-build/
-
-node_modules/
-yarn.lock
 src/react-app-env.d.ts
 src/reportWebVitals.ts
+
+# VS Code
+.vscode/*

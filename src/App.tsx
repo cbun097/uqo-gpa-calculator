@@ -19,8 +19,8 @@ import {
 import { ModalTableGrade } from './modal-table-grade';
 import { Footer } from './Footer';
 
-function App() {
-  const { register, handleSubmit } = useForm<IFormInput>();
+export function App() {
+  const { register, handleSubmit, errors } = useForm<IFormInput>();
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const onSubmit = async (data: IFormInput) => {
@@ -48,11 +48,13 @@ function App() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormControl id='currentGPA'>
             <FormLabel>Moyenne cumulative globale sur 4,30: </FormLabel>
-            <Input type='text' name='currentGPA' id='currentGPA' ref={register} />
+            <Input type='text' name='currentGPA' id='currentGPA' ref={register({ min: 0, max: 4.3 })} />
+            {errors.currentGPA && 'Votre GPA est invalide'}
           </FormControl>
           <FormControl id='currentCreditsEarned' marginTop='3'>
             <FormLabel>Crédits réussis: </FormLabel>
-            <Input type='text' name='currentCreditsEarned' id='currentCreditsEarned' ref={register} />
+            <Input type='text' name='currentCreditsEarned' id='currentCreditsEarned' ref={register({ pattern: /^\d+$/ })} />
+            {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
           </FormControl>
 
           <Container m={1}>
@@ -63,24 +65,33 @@ function App() {
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
-              <Input type='text' name='creditsEarned1' id='creditsEarned1' ref={register} />
+              <Input type='text' name='creditsEarned1' id='creditsEarned1' ref={register({ required: true, pattern: /^\d+$/ })} />
+              {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
             </FormControl>
 
             <FormControl id='credits-earned'>
               <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned1' id='resultEarned1' ref={register} />
+              <Input
+                type='text'
+                name='resultEarned1'
+                id='resultEarned1'
+                ref={register({ required: true, pattern: /^([A-Ea-e+-]*$){2}/ })}
+              />
+              {errors.currentCreditsEarned && 'Seul les lettres de A à E sont acceptés'}
             </FormControl>
           </HStack>
 
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
-              <Input type='text' name='creditsEarned2' id='creditsEarned2' ref={register} />
+              <Input type='text' name='creditsEarned2' id='creditsEarned2' ref={register({ required: true })} />
+              {errors.creditsEarned2 && 'Champ obligatoire'}
             </FormControl>
 
             <FormControl id='credits-earned'>
               <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned2' id='resultEarned2' ref={register} />
+              <Input type='text' name='resultEarned2' id='resultEarned2' ref={register({ required: true })} />
+              {errors.resultEarned2 && 'Champ obligatoire'}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>

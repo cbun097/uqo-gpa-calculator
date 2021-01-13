@@ -1,21 +1,19 @@
-//FIXME:
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-
+//FIXME: typesafe some of the any type
 export interface IFormInput {
   currentGPA: number;
   currentCreditsEarned: number;
   // TEMP
   creditsEarned1: number;
   creditsEarned2: number;
-  creditsEarned3: number;
-  creditsEarned4: number;
+  creditsEarned3?: number;
+  creditsEarned4?: number;
   creditsEarned5?: number;
   // TEMP
-  resultEarned1: number | string;
-  resultEarned2: number | string;
-  resultEarned3: number | string;
-  resultEarned4?: number | string;
-  resultEarned5?: number | string;
+  resultEarned1: string;
+  resultEarned2: string;
+  resultEarned3?: string;
+  resultEarned4?: string;
+  resultEarned5?: string;
 }
 
 export const initialValues: IFormInput = {
@@ -28,11 +26,11 @@ export const initialValues: IFormInput = {
   creditsEarned4: 0,
   creditsEarned5: 0,
   // TEMP
-  resultEarned1: 0,
-  resultEarned2: 0,
-  resultEarned3: 0,
-  resultEarned4: 0,
-  resultEarned5: 0,
+  resultEarned1: '',
+  resultEarned2: '',
+  resultEarned3: '',
+  resultEarned4: '',
+  resultEarned5: '',
 };
 
 const notationList: string[] = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'E'];
@@ -42,7 +40,8 @@ const pointsList: number[] = [4.3, 4.0, 3.7, 3.3, 3.0, 2.7, 2.3, 2.0, 1.7, 1.3, 
  * nombre de credits accumules * gpa actuelle
  */
 export function calculateGradePoints(credits: number, currentGPA: number): number {
-  return credits * currentGPA;
+  const opp = (credits * currentGPA).toFixed(5);
+  return Number(opp);
 }
 
 /**
@@ -57,9 +56,9 @@ export function accumulatedCredits(formData: IFormInput): number {
   return (
     Number(formData.creditsEarned1) +
     Number(formData.creditsEarned2) +
-    Number(formData.creditsEarned3) +
-    Number(formData?.creditsEarned4 ? formData.creditsEarned4 : 0) +
-    Number(formData?.creditsEarned5 ? formData.creditsEarned5 : 0)
+    Number(formData?.creditsEarned3) +
+    Number(formData?.creditsEarned4) +
+    Number(formData?.creditsEarned5)
   );
 }
 
@@ -67,7 +66,7 @@ export function accumulatedCredits(formData: IFormInput): number {
  * Fonction qui convertit le resultat en lettre obtenue en point
  * @param input
  */
-export function convertLetterToPoints(input: string) {
+export function convertLetterToPoints(input: string): number {
   // eslint-disable-next-line
   const letterIndex: any = notationList.indexOf(input);
   return pointsList[letterIndex];
@@ -78,32 +77,20 @@ export function convertLetterToPoints(input: string) {
  * @param credits
  * @param results
  */
-export function semesterGradePoints(formData: IFormInput) {
+export function semesterGradePoints(formData: IFormInput): number {
   let sum = 0;
-  let total = 0;
   // eslint-disable-next-line
   const results: any[] = [
     formData.resultEarned1,
     formData.resultEarned2,
-    formData.resultEarned3,
-    formData.resultEarned4,
-    formData.resultEarned5,
+    formData?.resultEarned3,
+    formData?.resultEarned4,
+    formData?.resultEarned5,
   ];
-  // eslint-disable-next-line
-  const credits: any[] = [
-    formData.creditsEarned1,
-    formData.creditsEarned2,
-    formData.creditsEarned3,
-    formData.creditsEarned4,
-    formData.creditsEarned5,
-  ];
-  results.forEach(element => {
-    const value = convertLetterToPoints(element.toString());
-    credits.forEach(e => {
-      total = value * e;
-    });
-    sum += total;
-  });
+  for (let i = 0; i < results.length; i++) {
+    const convert = results[i] === '' ? (results[i] = 0) : convertLetterToPoints(String(results[i]).toUpperCase());
+    sum += convert;
+  }
   return sum;
 }
 
@@ -115,7 +102,7 @@ export function semesterGradePoints(formData: IFormInput) {
  */
 export function semesterCalculateGPA(formData: IFormInput): number {
   const grade: number = semesterGradePoints(formData);
-  const opp = (Number(grade) / accumulatedCredits(formData)).toFixed(3);
+  const opp = (Number(grade) / accumulatedCredits(formData)).toFixed(5);
   return Number(opp);
 }
 
@@ -144,5 +131,6 @@ export function finalPoints(results: IFormInput): number {
  * @param results
  */
 export function finalGPA(results: IFormInput): number {
-  return (semesterCalculateGPA(results) + Number(results.currentGPA)) / 2;
+  const opperation = ((semesterCalculateGPA(results) + Number(results.currentGPA)) / 2).toPrecision(5);
+  return Number(opperation);
 }
