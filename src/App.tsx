@@ -1,8 +1,10 @@
+/* eslint-disable prettier/prettier */
 //FIXME: remove lint error
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import {
+  Box,
   Button,
   Container,
   FormControl,
@@ -49,8 +51,6 @@ export function App() {
       action: 'Calculate GPA',
     });
   };
-  console.log(colorMode);
-  console.log(toggleColorMode);
   useEffect(() => {
     ReactGA.initialize('G-115SPZX12W1');
     ReactGA.pageview(window.location.pathname + window.location.search);
@@ -58,15 +58,16 @@ export function App() {
 
   return (
     <div>
-      <Container maxW='xl' centerContent padding={5}>
-        <header>
-          <IconButton aria-label='theme mode light' icon={<SunIcon />} onClick={toggleColorMode}>
-            Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-          </IconButton>
+      <Box display='flex' justifyContent='flex-end' mt={4} mr={4}>
+        {colorMode === 'dark' && <IconButton aria-label='theme mode light' icon={<SunIcon />} onClick={toggleColorMode}></IconButton>}
+
+        {colorMode === 'light' && (
           <IconButton aria-label='theme mode dark' icon={<MoonIcon />} onClick={toggleColorMode}>
             {colorMode === 'light' ? 'Dark' : 'Light'}
           </IconButton>
-        </header>
+        )}
+      </Box>
+      <Container maxW='xl' centerContent p={5}>
         <Heading as='h2' size='2xl' paddingBottom='4'>
           UQO - Calculatrice GPA
         </Heading>
