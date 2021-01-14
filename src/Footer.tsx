@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Divider, Link, Text } from '@chakra-ui/react';
 
 export const Footer: React.FC = () => (
-  <Container centerContent marginTop={4} marginBottom={3}>
-    <Divider orientation='horizontal' />
+  <Container centerContent marginTop={4} mb={3}>
+    <Divider orientation='horizontal' mb={2} />
     <Text>
       Lien source:&nbsp;
       <Link

@@ -27,7 +27,9 @@ export function ModalTableGrade() {
 
   return (
     <>
-      <Button onClick={onOpen}>Ouvrir tableau de note UQO</Button>
+      <Button onClick={onOpen} mt={2}>
+        Ouvrir tableau de note UQO
+      </Button>
 
       <Modal onClose={onClose} isOpen={isOpen} blockScrollOnMount={false} isCentered>
         <ModalOverlay />
