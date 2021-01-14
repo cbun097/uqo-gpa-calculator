@@ -15,6 +15,7 @@ Dans le cas, si vous êtes actuellement un(e) étudiant(e) de l'UQO, à partir d
 - [React](https://reactjs.org/) v17
 - [Chakra UI](https://chakra-ui.com/) v1
 - [React-hook-form](https://react-hook-form.com/) v6
+- [Icons](https://fontawesome.com/)
 
 ## Execution du projet en local
 

@@ -2,7 +2,20 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import { Button, Container, FormControl, FormLabel, Heading, HStack, Input, Stack, Switch, Text } from '@chakra-ui/react';
+import {
+  Button,
+  Container,
+  FormControl,
+  FormLabel,
+  Heading,
+  HStack,
+  IconButton,
+  Input,
+  Stack,
+  Switch,
+  Text,
+  useColorMode,
+} from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 import ReactGA from 'react-ga';
 import {
@@ -18,12 +31,14 @@ import {
 } from './utils';
 import { ModalTableGrade } from './modal-table-grade';
 import { Footer } from './Footer';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 export function App() {
   const { register, handleSubmit, errors } = useForm<IFormInput>();
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const [isFirstSemester, setIsFirstSemester] = useState(false);
+  const { colorMode, toggleColorMode } = useColorMode();
   const onSubmit = async (data: IFormInput) => {
     setForm(data);
   };
@@ -34,7 +49,8 @@ export function App() {
       action: 'Calculate GPA',
     });
   };
-
+  console.log(colorMode);
+  console.log(toggleColorMode);
   useEffect(() => {
     ReactGA.initialize('G-115SPZX12W1');
     ReactGA.pageview(window.location.pathname + window.location.search);
@@ -43,6 +59,14 @@ export function App() {
   return (
     <div>
       <Container maxW='xl' centerContent padding={5}>
+        <header>
+          <IconButton aria-label='theme mode light' icon={<SunIcon />} onClick={toggleColorMode}>
+            Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+          </IconButton>
+          <IconButton aria-label='theme mode dark' icon={<MoonIcon />} onClick={toggleColorMode}>
+            {colorMode === 'light' ? 'Dark' : 'Light'}
+          </IconButton>
+        </header>
         <Heading as='h2' size='2xl' paddingBottom='4'>
           UQO - Calculatrice GPA
         </Heading>
