@@ -35,12 +35,27 @@ export const initialValues: IFormInput = {
 
 const notationList: string[] = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'E'];
 const pointsList: number[] = [4.3, 4.0, 3.7, 3.3, 3.0, 2.7, 2.3, 2.0, 1.7, 1.3, 1.0, 0];
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const notationMap = {
+  'A+': 4.3,
+  A: 4.0,
+  'A-': 3.7,
+  'B+': 3.3,
+  B: 3.0,
+  'B-': 2.7,
+  'C+': 2.3,
+  C: 2.0,
+  'C-': 1.7,
+  'D+': 1.0,
+  D: 1.0,
+  E: 0,
+};
 
 /** fonction qui permet de calculer les points
  * nombre de credits accumules * gpa actuelle
  */
 export function calculateGradePoints(credits: number, currentGPA: number): number {
-  const opp = (credits * currentGPA).toFixed(5);
+  const opp = (credits * currentGPA).toPrecision(5);
   return Number(opp);
 }
 
@@ -79,17 +94,29 @@ export function convertLetterToPoints(input: string): number {
  */
 export function semesterGradePoints(formData: IFormInput): number {
   let sum = 0;
+  let totalPts = 0;
   // eslint-disable-next-line
   const results: any[] = [
     formData.resultEarned1,
     formData.resultEarned2,
-    formData?.resultEarned3,
-    formData?.resultEarned4,
-    formData?.resultEarned5,
+    formData?.resultEarned3 ? formData.resultEarned3 : 0,
+    formData?.resultEarned4 ? formData.resultEarned4 : 0,
+    formData?.resultEarned5 ? formData.resultEarned5 : 0,
   ];
-  for (let i = 0; i < results.length; i++) {
-    const convert = results[i] === '' ? (results[i] = 0) : convertLetterToPoints(String(results[i]).toUpperCase());
-    sum += convert;
+  // eslint-disable-next-line
+  const credits: any[] = [
+    formData.creditsEarned1,
+    formData.creditsEarned2,
+    formData.creditsEarned3,
+    formData?.creditsEarned4 ? formData.creditsEarned4 : 0,
+    formData?.creditsEarned5 ? formData.creditsEarned5 : 0,
+  ];
+  // eslint-disable-next-line
+  let convert: any;
+  for (let i = 0; i <= results.length - 1; i++) {
+    convert = results[i] != 0 ? convertLetterToPoints(String(results[i]).toUpperCase()) : 0;
+    totalPts = convert * credits[i];
+    sum += totalPts;
   }
   return sum;
 }
@@ -102,8 +129,8 @@ export function semesterGradePoints(formData: IFormInput): number {
  */
 export function semesterCalculateGPA(formData: IFormInput): number {
   const grade: number = semesterGradePoints(formData);
-  const opp = (Number(grade) / accumulatedCredits(formData)).toFixed(5);
-  return Number(opp);
+  const opp = Number(grade) / accumulatedCredits(formData);
+  return Number(opp.toPrecision(5));
 }
 
 /**
@@ -122,7 +149,8 @@ export function totalCredits(results: IFormInput): number {
  * @param results
  */
 export function finalPoints(results: IFormInput): number {
-  return calculateGradePoints(results.currentCreditsEarned, results.currentGPA) + Number(semesterGradePoints(results));
+  const operation = calculateGradePoints(results.currentCreditsEarned, results.currentGPA) + Number(semesterGradePoints(results));
+  return Number(operation.toPrecision(5));
 }
 
 /**
@@ -131,6 +159,6 @@ export function finalPoints(results: IFormInput): number {
  * @param results
  */
 export function finalGPA(results: IFormInput): number {
-  const opperation = ((semesterCalculateGPA(results) + Number(results.currentGPA)) / 2).toPrecision(5);
-  return Number(opperation);
+  const operation = (semesterCalculateGPA(results) + Number(results.currentGPA)) / 2;
+  return Number(operation.toPrecision(5));
 }

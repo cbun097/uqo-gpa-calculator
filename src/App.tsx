@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import { Button, Container, FormControl, FormLabel, Heading, HStack, Input, Stack, Text } from '@chakra-ui/react';
+import { Button, Container, FormControl, FormLabel, Heading, HStack, Input, Stack, Switch, Text } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 import ReactGA from 'react-ga';
 import {
@@ -23,6 +23,7 @@ export function App() {
   const { register, handleSubmit, errors } = useForm<IFormInput>();
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
+  const [isFirstSemester, setIsFirstSemester] = useState(false);
   const onSubmit = async (data: IFormInput) => {
     setForm(data);
   };
@@ -46,16 +47,32 @@ export function App() {
           UQO - Calculatrice GPA
         </Heading>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <FormControl id='currentGPA'>
-            <FormLabel>Moyenne cumulative globale sur 4,30: </FormLabel>
-            <Input type='text' name='currentGPA' id='currentGPA' ref={register({ min: 0, max: 4.3 })} />
-            {errors.currentGPA && 'Votre GPA est invalide'}
+          <FormControl display='flex' alignItems='center'>
+            <FormLabel htmlFor='firstSemester' mb='0'>
+              Première session à l&#39;UQO?
+            </FormLabel>
+            <Switch
+              id='firstSemester'
+              onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                setIsFirstSemester(event.target.checked);
+              }}
+              name='firstSemester'
+            />
           </FormControl>
-          <FormControl id='currentCreditsEarned' marginTop='3'>
-            <FormLabel>Crédits réussis: </FormLabel>
-            <Input type='text' name='currentCreditsEarned' id='currentCreditsEarned' ref={register({ pattern: /^\d+$/ })} />
-            {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
-          </FormControl>
+          {!isFirstSemester && (
+            <div>
+              <FormControl id='currentGPA'>
+                <FormLabel>Moyenne cumulative globale sur 4,30: </FormLabel>
+                <Input type='text' name='currentGPA' id='currentGPA' ref={register({ min: 0, max: 4.3 })} />
+                {errors.currentGPA && 'Votre GPA est invalide'}
+              </FormControl>
+              <FormControl id='currentCreditsEarned' marginTop='3'>
+                <FormLabel>Crédits réussis: </FormLabel>
+                <Input type='text' name='currentCreditsEarned' id='currentCreditsEarned' ref={register({ pattern: /^\d+$/ })} />
+                {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
+              </FormControl>
+            </div>
+          )}
 
           <Container m={1}>
             <Text>Ce semestre</Text>
@@ -146,23 +163,25 @@ export function App() {
           <Text fontSize='lg' as='b'>
             Résultats:
           </Text>
-          <Container m={1}>
-            <Text fontSize='md' as='b'>
-              Au début du semestre
-            </Text>
-            <Text>
-              Crédits:&nbsp;
-              {form?.currentCreditsEarned}
-            </Text>
-            <Text>
-              Notes pointage:&nbsp;
-              {calculateGradePoints(form?.currentCreditsEarned, form?.currentGPA)}
-            </Text>
-            <Text>
-              Moyenne cumulative globale sur 4,30:&nbsp;
-              {form?.currentGPA}
-            </Text>
-          </Container>
+          {!isFirstSemester && (
+            <Container m={1}>
+              <Text fontSize='md' as='b'>
+                Au début du semestre
+              </Text>
+              <Text>
+                Crédits:&nbsp;
+                {form?.currentCreditsEarned}
+              </Text>
+              <Text>
+                Notes pointage:&nbsp;
+                {calculateGradePoints(form?.currentCreditsEarned, form?.currentGPA)}
+              </Text>
+              <Text>
+                Moyenne cumulative globale sur 4,30:&nbsp;
+                {form?.currentGPA}
+              </Text>
+            </Container>
+          )}
 
           <Container m={1}>
             <Text fontSize='md' as='b'>
@@ -182,24 +201,26 @@ export function App() {
             </Text>
           </Container>
 
-          <Container m={1}>
-            <Text fontSize='md' as='b'>
-              Calcul estimé - total
-            </Text>
-            <Text>
-              Total crédits:&nbsp;
-              {totalCredits(form)}
-            </Text>
-            <Text>
-              Total notes pointage: &nbsp;
-              {finalPoints(form)}
-            </Text>
-            <Text>
-              Résultat moyenne cumulative globale sur 4,30:&nbsp;
-              {finalGPA(form)}
-            </Text>
-            <ModalTableGrade />
-          </Container>
+          {!isFirstSemester && (
+            <Container m={1}>
+              <Text fontSize='md' as='b'>
+                Calcul estimé - total
+              </Text>
+              <Text>
+                Total crédits:&nbsp;
+                {totalCredits(form)}
+              </Text>
+              <Text>
+                Total notes pointage: &nbsp;
+                {finalPoints(form)}
+              </Text>
+              <Text>
+                Résultat moyenne cumulative globale sur 4,30:&nbsp;
+                {finalGPA(form)}
+              </Text>
+            </Container>
+          )}
+          <ModalTableGrade />
         </Container>
       )}
       <Footer />
