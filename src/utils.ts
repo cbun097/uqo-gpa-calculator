@@ -2,30 +2,28 @@
 export interface IFormInput {
   currentGPA: number;
   currentCreditsEarned: number;
-  // TEMP
   creditsEarned1: number;
   creditsEarned2: number;
   creditsEarned3?: number;
   creditsEarned4?: number;
   creditsEarned5?: number;
-  // TEMP
   resultEarned1: string;
   resultEarned2: string;
   resultEarned3?: string;
   resultEarned4?: string;
   resultEarned5?: string;
+  creditsEarned?: number[];
+  resultEarned?: string[];
 }
 
 export const initialValues: IFormInput = {
   currentGPA: 0,
   currentCreditsEarned: 0,
-  // TEMP
   creditsEarned1: 0,
   creditsEarned2: 0,
   creditsEarned3: 0,
   creditsEarned4: 0,
   creditsEarned5: 0,
-  // TEMP
   resultEarned1: '',
   resultEarned2: '',
   resultEarned3: '',
@@ -51,6 +49,11 @@ const notationMap = {
   E: 0,
 };
 
+/** create an array with number for additional credits and result */
+export function createArrayWithNumbers(length: number): number[] {
+  return Array.from({ length }, (_, k) => k);
+}
+
 /** fonction qui permet de calculer les points
  * nombre de credits accumules * gpa actuelle
  */
@@ -61,19 +64,19 @@ export function calculateGradePoints(credits: number, currentGPA: number): numbe
 
 /**
  * Fonction qui permet de calculer les credits accumuler pour le semestre
- * @param c1
- * @param c2
- * @param c3
- * @param c4
- * @param c5
  */
 export function accumulatedCredits(formData: IFormInput): number {
+  let sumArray = 0;
+  formData.creditsEarned?.map(element => {
+    sumArray += Number(element);
+  });
   return (
     Number(formData.creditsEarned1) +
     Number(formData.creditsEarned2) +
     Number(formData?.creditsEarned3) +
     Number(formData?.creditsEarned4) +
-    Number(formData?.creditsEarned5)
+    Number(formData?.creditsEarned5) +
+    sumArray
   );
 }
 
@@ -89,8 +92,6 @@ export function convertLetterToPoints(input: string): number {
 
 /**
  * Calculer les points accumulates selon le resultat obtenu
- * @param credits
- * @param results
  */
 export function semesterGradePoints(formData: IFormInput): number {
   let sum = 0;
@@ -102,6 +103,7 @@ export function semesterGradePoints(formData: IFormInput): number {
     formData?.resultEarned3 ? formData.resultEarned3 : 0,
     formData?.resultEarned4 ? formData.resultEarned4 : 0,
     formData?.resultEarned5 ? formData.resultEarned5 : 0,
+    formData?.resultEarned,
   ];
   // eslint-disable-next-line
   const credits: any[] = [
@@ -110,7 +112,10 @@ export function semesterGradePoints(formData: IFormInput): number {
     formData.creditsEarned3,
     formData?.creditsEarned4 ? formData.creditsEarned4 : 0,
     formData?.creditsEarned5 ? formData.creditsEarned5 : 0,
+    formData?.creditsEarned,
   ];
+  console.log('result array', results);
+  console.log('credits array', credits);
   // eslint-disable-next-line
   let convert: any;
   for (let i = 0; i <= results.length - 1; i++) {
@@ -124,8 +129,6 @@ export function semesterGradePoints(formData: IFormInput): number {
 /**
  * Calcule du GPA estime
  * semester points/ accumalated credits
- * @param gpa
- * @param credits
  */
 export function semesterCalculateGPA(formData: IFormInput): number {
   const grade: number = semesterGradePoints(formData);

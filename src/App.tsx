@@ -1,23 +1,6 @@
-/* eslint-disable prettier/prettier */
-//FIXME: remove lint error
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import React, { useEffect, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import './App.css';
-import {
-  Box,
-  Button,
-  Container,
-  FormControl,
-  FormLabel,
-  Heading,
-  HStack,
-  IconButton,
-  Input,
-  Stack,
-  Switch,
-  Text,
-  useColorMode,
-} from '@chakra-ui/react';
+import { Button, Container, FormControl, FormLabel, Heading, HStack, Input, Stack, Switch, Text } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 import ReactGA from 'react-ga';
 import {
@@ -30,19 +13,24 @@ import {
   initialValues,
   semesterGradePoints,
   totalCredits,
+  createArrayWithNumbers,
 } from './utils';
 import { ModalTableGrade } from './modal-table-grade';
 import { Footer } from './Footer';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { Menu } from './Menu';
 
-export function App() {
-  const { register, handleSubmit, errors } = useForm<IFormInput>();
+export default function App(): ReactElement {
+  const { register, handleSubmit, getValues, errors } = useForm<IFormInput>();
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const [isFirstSemester, setIsFirstSemester] = useState(false);
-  const { colorMode, toggleColorMode } = useColorMode();
-  const onSubmit = async (data: IFormInput) => {
-    setForm(data);
+  const [size, setSize] = useState(1);
+  console.log('size of array', size);
+  // console.log('form data', form);
+  const onSubmit = async () => {
+    const values: IFormInput = getValues();
+    setForm(values);
+    console.log('form values', values);
   };
   const submitCalcul = () => {
     setBtnClicked(true);
@@ -58,15 +46,7 @@ export function App() {
 
   return (
     <div>
-      <Box display='flex' justifyContent='flex-end' mt={4} mr={4}>
-        {colorMode === 'dark' && <IconButton aria-label='theme mode light' icon={<SunIcon />} onClick={toggleColorMode}></IconButton>}
-
-        {colorMode === 'light' && (
-          <IconButton aria-label='theme mode dark' icon={<MoonIcon />} onClick={toggleColorMode}>
-            {colorMode === 'light' ? 'Dark' : 'Light'}
-          </IconButton>
-        )}
-      </Box>
+      <Menu />
       <Container maxW='xl' centerContent p={5}>
         <Heading as='h2' size='2xl' paddingBottom='4'>
           UQO - Calculatrice GPA
@@ -98,12 +78,10 @@ export function App() {
               </FormControl>
             </div>
           )}
-
           <Container m={1}>
             <Text>Ce semestre</Text>
             <Text>Les cours pris cette session ou les cours prévus</Text>
           </Container>
-
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
@@ -122,7 +100,6 @@ export function App() {
               {errors.currentCreditsEarned && 'Seul les lettres de A à E sont acceptés'}
             </FormControl>
           </HStack>
-
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
@@ -169,7 +146,31 @@ export function App() {
               <Input type='text' name='resultEarned5' id='resultEarned5' ref={register} />
             </FormControl>
           </HStack>
+          {createArrayWithNumbers(size).map(index => {
+            return (
+              <HStack spacing='24px' marginTop='3' key={index}>
+                <FormControl id='credits-earned'>
+                  <FormLabel>Crédits: </FormLabel>
+                  <Input
+                    type='text'
+                    name={`creditsEarned[${index}]`}
+                    id={`creditsEarned[${index}]`}
+                    ref={register({ required: true, pattern: /^\d+$/ })}
+                  />
+                </FormControl>
 
+                <FormControl id='credits-earned'>
+                  <FormLabel>Résultat: </FormLabel>
+                  <Input
+                    type='text'
+                    name={`resultEarned[${index}]`}
+                    id={`resultEarned[${index}]`}
+                    ref={register({ required: true, pattern: /^([A-Ea-e+-]*$){2}/ })}
+                  />
+                </FormControl>
+              </HStack>
+            );
+          })}
           <Stack direction='row' spacing={4} padding='5' justify='center'>
             <Button type='submit' onClick={() => submitCalcul()}>
               Calculer
@@ -177,7 +178,9 @@ export function App() {
             <Button type='reset' onClick={() => setBtnClicked(false)}>
               Réinitialiser
             </Button>
-            {/* <Button>Ajouter une rangée</Button> */}
+            <Button type='button' onClick={() => setSize(size + 1)}>
+              Ajouter une rangée
+            </Button>
           </Stack>
         </form>
       </Container>
@@ -252,5 +255,3 @@ export function App() {
     </div>
   );
 }
-
-export default App;
