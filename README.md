@@ -1,4 +1,4 @@
-# Calculatrice GPA - UQO
+# Calculatrice GPA - Université du Québec en Outaouais (UQO)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ec8f258e-fa1d-4b24-8d2f-b4d89f361227/deploy-status)](https://app.netlify.com/sites/cbun097-uqo-gpa-cal/deploys) [![Actions status](https://github.com/cbun097/uqo-gpa-calculator/workflows/Build%20frontend/badge.svg)](https://github.com/cbun097/uqo-gpa-calculator/actions)
 
