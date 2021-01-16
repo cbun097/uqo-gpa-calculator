@@ -1,6 +1,4 @@
-//FIXME: remove lint error
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import React from 'react';
+import React, { ReactElement } from 'react';
 import {
   Modal,
   ModalOverlay,
@@ -22,7 +20,7 @@ import {
   Box,
 } from '@chakra-ui/react';
 
-export function ModalTableGrade() {
+export function ModalTableGrade(): ReactElement {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
