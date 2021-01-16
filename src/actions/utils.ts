@@ -6,12 +6,10 @@ export interface IFormInput {
   creditsEarned2: number;
   creditsEarned3?: number;
   creditsEarned4?: number;
-  creditsEarned5?: number;
   resultEarned1: string;
   resultEarned2: string;
   resultEarned3?: string;
   resultEarned4?: string;
-  resultEarned5?: string;
   creditsEarned?: number[];
   resultEarned?: string[];
 }
@@ -23,12 +21,10 @@ export const initialValues: IFormInput = {
   creditsEarned2: 0,
   creditsEarned3: 0,
   creditsEarned4: 0,
-  creditsEarned5: 0,
   resultEarned1: '',
   resultEarned2: '',
   resultEarned3: '',
   resultEarned4: '',
-  resultEarned5: '',
 };
 
 const notationList: string[] = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'E'];
@@ -73,9 +69,8 @@ export function accumulatedCredits(formData: IFormInput): number {
   return (
     Number(formData.creditsEarned1) +
     Number(formData.creditsEarned2) +
-    Number(formData?.creditsEarned3) +
-    Number(formData?.creditsEarned4) +
-    Number(formData?.creditsEarned5) +
+    Number(formData?.creditsEarned3 ? formData.creditsEarned3 : 0) +
+    Number(formData?.creditsEarned4 ? formData.creditsEarned4 : 0) +
     sumArray
   );
 }
@@ -102,7 +97,6 @@ export function semesterGradePoints(formData: IFormInput): number {
     formData.resultEarned2,
     formData?.resultEarned3 ? formData.resultEarned3 : 0,
     formData?.resultEarned4 ? formData.resultEarned4 : 0,
-    formData?.resultEarned5 ? formData.resultEarned5 : 0,
     formData?.resultEarned,
   ];
   // eslint-disable-next-line
@@ -111,11 +105,8 @@ export function semesterGradePoints(formData: IFormInput): number {
     formData.creditsEarned2,
     formData.creditsEarned3,
     formData?.creditsEarned4 ? formData.creditsEarned4 : 0,
-    formData?.creditsEarned5 ? formData.creditsEarned5 : 0,
     formData?.creditsEarned,
   ];
-  console.log('result array', results);
-  console.log('credits array', credits);
   // eslint-disable-next-line
   let convert: any;
   for (let i = 0; i <= results.length - 1; i++) {
