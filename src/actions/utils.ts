@@ -6,12 +6,20 @@ export interface IFormInput {
   creditsEarned2: number;
   creditsEarned3?: number;
   creditsEarned4?: number;
+  creditsEarned5?: number;
   resultEarned1: string;
   resultEarned2: string;
   resultEarned3?: string;
   resultEarned4?: string;
-  creditsEarned?: number[];
-  resultEarned?: string[];
+  resultEarned5?: string;
+  creditsEarnedArray?: number[];
+  resultEarnedArray?: string[];
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+interface IResultsList {
+  creditsEarned: number[];
+  resultEarned: string[];
 }
 
 export const initialValues: IFormInput = {
@@ -63,7 +71,7 @@ export function calculateGradePoints(credits: number, currentGPA: number): numbe
  */
 export function accumulatedCredits(formData: IFormInput): number {
   let sumArray = 0;
-  formData.creditsEarned?.map(element => {
+  formData.creditsEarnedArray?.map(element => {
     sumArray += Number(element);
   });
   return (
@@ -71,6 +79,7 @@ export function accumulatedCredits(formData: IFormInput): number {
     Number(formData.creditsEarned2) +
     Number(formData?.creditsEarned3 ? formData.creditsEarned3 : 0) +
     Number(formData?.creditsEarned4 ? formData.creditsEarned4 : 0) +
+    Number(formData?.creditsEarned5 ? formData.creditsEarned5 : 0) +
     sumArray
   );
 }
@@ -97,15 +106,17 @@ export function semesterGradePoints(formData: IFormInput): number {
     formData.resultEarned2,
     formData?.resultEarned3 ? formData.resultEarned3 : 0,
     formData?.resultEarned4 ? formData.resultEarned4 : 0,
-    formData?.resultEarned,
+    formData?.resultEarned5 ? formData.resultEarned5 : 0,
+    formData?.resultEarnedArray,
   ];
   // eslint-disable-next-line
   const credits: any[] = [
     formData.creditsEarned1,
     formData.creditsEarned2,
-    formData.creditsEarned3,
+    formData?.creditsEarned3 ? formData.creditsEarned3 : 0,
     formData?.creditsEarned4 ? formData.creditsEarned4 : 0,
-    formData?.creditsEarned,
+    formData?.creditsEarned5 ? formData.creditsEarned5 : 0,
+    formData?.creditsEarnedArray,
   ];
   // eslint-disable-next-line
   let convert: any;

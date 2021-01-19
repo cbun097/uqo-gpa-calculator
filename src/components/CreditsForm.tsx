@@ -1,10 +1,11 @@
-import { Container, Heading, FormControl, FormLabel, Switch, Input, HStack, Stack, Button, Text } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import { Container, Heading, FormControl, FormLabel, Switch, Input, HStack, Stack, Button, Text, IconButton, Box } from '@chakra-ui/react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { IFormInput, createArrayWithNumbers, initialValues } from '../actions/utils';
 import ReactGA from 'react-ga';
 import { Results } from './Results';
 import { ModalTableGrade } from '../modal-table-grade';
+import { DeleteIcon } from '@chakra-ui/icons';
 
 interface ICreditForm {
   isFirstSemester: boolean;
@@ -15,8 +16,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const [isFirstSemester, setIsFirstSemester] = useState(false);
-  const { register, handleSubmit, getValues, errors } = useForm<IFormInput>();
-  const [size, setSize] = useState(1);
+  const { register, handleSubmit, getValues, errors, formState } = useForm<IFormInput>();
+  const [size, setSize] = useState(0);
   const onSubmit = async (data: IFormInput) => {
     const values: IFormInput = getValues();
     data = values;
@@ -31,6 +32,9 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
       action: 'Calculate GPA',
     });
   };
+  useEffect(() => {
+    // console.log('touched', formState.touched);
+  }, [formState]);
   return (
     <>
       <Container maxW='xl' centerContent p={5}>
@@ -125,23 +129,46 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
               {errors.currentCreditsEarned && 'Seul les lettres de A à E sont acceptés'}
             </FormControl>
           </HStack>
+          <HStack spacing='24px' marginTop='3'>
+            <FormControl id='credits-earned'>
+              <FormLabel>Crédits: </FormLabel>
+              <Input type='text' name='creditsEarned5' id='creditsEarned5' ref={register({ pattern: /^\d+$/ })} />
+              {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
+            </FormControl>
+
+            <FormControl id='credits-earned'>
+              <FormLabel>Résultat: </FormLabel>
+              <Input type='text' name='resultEarned5' id='resultEarned5' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
+              {errors.currentCreditsEarned && 'Seul les lettres de A à E sont acceptés'}
+            </FormControl>
+          </HStack>
           {createArrayWithNumbers(size).map(index => {
             return (
-              <HStack spacing='24px' marginTop='3' key={index}>
+              <HStack spacing='24px' marginTop='3' key={index} align='center'>
                 <FormControl id='credits-earned'>
                   <FormLabel>Crédits: </FormLabel>
-                  <Input type='text' name={`creditsEarned[${index}]`} id={`creditsEarned[${index}]`} ref={register({ pattern: /^\d+$/ })} />
+                  <Input
+                    type='text'
+                    name={`creditsEarnedArray[${index}]`}
+                    id={`creditsEarnedArray[${index}]`}
+                    ref={register({ pattern: /^\d+$/ })}
+                  />
                 </FormControl>
 
                 <FormControl id='credits-earned'>
                   <FormLabel>Résultat: </FormLabel>
                   <Input
                     type='text'
-                    name={`resultEarned[${index}]`}
-                    id={`resultEarned[${index}]`}
+                    name={`resultEarnedArray[${index}]`}
+                    id={`resultEarnedArray[${index}]`}
                     ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })}
                   />
                 </FormControl>
+                {size >= 1 && (
+                  <Box pt={[3, 6]}>
+                    <IconButton aria-label='supprimer rangee' size='lg' icon={<DeleteIcon />} onClick={() => setSize(size - 1)} />
+                  </Box>
+                )}
               </HStack>
             );
           })}
@@ -157,14 +184,14 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
             </Button>
           </Stack>
         </form>
+        {/* for testing purposes */}
+        {/* <pre>{JSON.stringify(formState, null, 2)}</pre> */}
       </Container>
-      {btnClicked && (
-        <>
-          <Container>
-            <Results form={form} isFirstSemester={isFirstSemester} />
-            <ModalTableGrade />
-          </Container>
-        </>
+      {btnClicked && formState.isValid && (
+        <Container>
+          <Results form={form} isFirstSemester={isFirstSemester} />
+          <ModalTableGrade />
+        </Container>
       )}
     </>
   );

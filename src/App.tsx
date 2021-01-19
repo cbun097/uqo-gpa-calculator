@@ -17,8 +17,6 @@ export default function App(): ReactElement {
     <div>
       <Menu />
       <CreditsForm form={form} isFirstSemester={isFirstSemester} />
-      {/* for testing purposes */}
-      {/* <pre>{JSON.stringify(formState, null, 2)}</pre> */}
       <Footer />
     </div>
   );
