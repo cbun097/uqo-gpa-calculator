@@ -36,8 +36,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
     // console.log('touched', formState.touched);
   }, [formState]);
   return (
-    <>
-      <Container maxW='xl' centerContent p={5}>
+    <Container>
+      <Box p={5}>
         <Heading as='h2' size='2xl' paddingBottom='4'>
           UQO - Calculatrice GPA
         </Heading>
@@ -172,7 +172,7 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
               </HStack>
             );
           })}
-          <Stack direction='row' spacing={4} padding='5' justify='center'>
+          <Stack direction={['column', 'row']} spacing={4} p={5} justify='center'>
             <Button type='submit' onClick={() => submitCalcul()}>
               Calculer
             </Button>
@@ -186,13 +186,14 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
         </form>
         {/* for testing purposes */}
         {/* <pre>{JSON.stringify(formState, null, 2)}</pre> */}
-      </Container>
-      {btnClicked && formState.isValid && (
-        <Container>
-          <Results form={form} isFirstSemester={isFirstSemester} />
-          <ModalTableGrade />
-        </Container>
-      )}
-    </>
+
+        {btnClicked && formState.isValid && (
+          <Container>
+            <Results form={form} isFirstSemester={isFirstSemester} />
+            <ModalTableGrade />
+          </Container>
+        )}
+      </Box>
+    </Container>
   );
 };

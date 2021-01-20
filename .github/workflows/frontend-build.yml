@@ -24,3 +24,6 @@ jobs:
 
       - name: Format
         run: yarn format
+
+      # - name: Unit Test
+      #   run: yarn test
