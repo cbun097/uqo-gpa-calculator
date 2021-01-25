@@ -1,0 +1,1355 @@
+ADM10031Analyse des systèmes d’information3,0
+ADM10101Stage coopératif en administration I0,0
+ADM10201Stage coopératif en administration II0,0ADM1010
+ADM10301Stage coopératif en administration III0,0ADM1020
+ADM10431Qualité des soins et des services de santé3,0SOI3583
+ADM18631Gestion des services de santé3,0
+ADM50061Stage en entreprise6,0
+ADM50231Projet d’intervention en gestion3,0
+ADM50331Analyse et résolution de cas en gestion3,0
+ADP10831Gestion dans le secteur public3,0
+ADP10931Système administratif de l’État3,0
+ADS10831Organisation de l’éducation au Québec3,0
+ANA301081Anlayse musicale 12,0
+ANA302081Analyse musicale 22,0
+ANG11231Performance in Oral English3,0
+ANG12001Rédaction anglaise – test de classement0,0
+ANG12231Practice in Oral English3,0
+ANG12431Rédaction anglaise - Intermédiaire I3,0
+ANG12531Rédaction anglaise - Intermédiaire II3,0ANG1243
+ANG12631Rédaction anglaise - Avancé I3,0ANG1253
+ANG12731Rédaction anglaise - Avancé II3,0ANG1263
+ANG90031Compréhension de l’anglais écrit spécialisé (niveau moyen)3,0
+ANG90231Compréhension de l’anglais écrit spécialisé (niveau supérieur)3,0
+APS10001Activité préparatoire aux stages coopératifs0,0
+ARI10031Dessin d’observation3,0
+ARI10231Sémiotique de l’image3,0
+ARI10331Logiciels graphiques3,0
+ARI10431Image et société3,0
+ARI10531Scénarisation du récit en images3,0
+ARI10631Composition et plasticité3,0
+ARI10731Conception et scénarisation de projets multimédias3,0ARI1033
+ARI10831Réalisation de projets multimédias3,0ARI1073 ou ARI1233
+ARI10931Univers et expression de la lettre3,0
+ARI11231Projet d’édition interdisciplinaire3,0
+ARI11331Culture du graphisme3,0
+ARI11431Art actuel3,0
+ARI11531La bande dessinée: perspectives socio-historiques3,0
+ARI11631Culture et éthique muséales3,0
+ARI11831Langage photographique3,0
+ARI11931Jeux et interactivités3,0ARI1073 et ARI1083
+ARI12031Image en mouvement3,0ARI1033
+ARI12331Conception de projets interactifs3,0ARI1033
+ARI12431Mots et images3,0
+ARI12531Approche interdisciplinaire de l’image en mouvement3,0ARI1033
+ARP01031Initiation au langage plastique I3,0
+ARP10211Introduction au programme1,0
+ARP10861Création synthèse: réalisation et diffusion6,0ARV1283
+ARP11031Exploration et méthode I3,0
+ARP11231Exploration et méthode II3,0ARP1103
+ARP11331Sujet choisi en arts visuels3,0
+ARP11731Esthétique3,0
+ARP11931Psychologie de la perception3,0
+ARP11961Création synthèse I : planification et exploration6,0
+ARP12031Théorie de la créativité3,0
+ARP13061Synthèse I en bande dessinée : exploration, scénarisation, découpage6,0
+ARP13261Synthèse II en bande dessinée : réalisation6,0ARP1306
+ARP13531Imagerie informatique3,0
+ARP13631Discours sur les arts visuels3,0
+ARP15231Procédés de production et de reproduction3,0
+ARP15331Bases typographiques3,0
+ARP15731Images de marque3,0
+ARP15931Design et normes institutionnelles3,0ARP1573
+ARP16231Publicité et communications3,0
+ARP16531Maquettes de présentation et portfolio3,0
+ARP16731Sérigraphie3,0
+ARP16831Scénario d’un travail informatisé3,0ARP1353 et ARP1523
+ARP17631Art contemporain et multidisciplinarité3,0ARP1363
+ARP17731Gestion de la carrière en arts et en design graphique3,0
+ARP18031Graphisme synthèse I: projet dans l’entreprise3,0
+ARP18061Graphisme synthèse II: recherche et innovation6,0ARP1653
+ARP19931Éditique et bande dessinée expérimentale3,0ARI1033
+ARP20031Bande dessinée de commande et scénarimage3,0
+ARP20231Dessin: anatomie et perspective II3,0BDE1003
+ARP20331Sujets choisis en arts3,0
+ARP21431Techniques de base en photographie3,0
+ARP21621Milieux professionnels2,0
+ARP22211Art canadien3,0
+ARU90031Atelier de réussite universitaire3,0
+ARV11331Atelier de peinture3,0
+ARV11431Approche sculpturale3,0
+ARV11531Métissage numérique et matériel3,0ARI1033
+ARV11631Dessin: exploration avancée3,0ARI1003
+ARV11731Projet pictural3,0ARV1133
+ARV11831Projet sculptural3,0ARV1143
+ARV11931Recherche et positionnement esthétique3,0ARV1243
+ARV12031Art public et performance3,0
+ARV12331Projet en métissage de l’image3,0ARV1153
+ARV12431Projet exploratoire en arts visuels I3,0ARV1133 et ARV1143 et ARV1153 et ARI1063
+ARV12631Atelier exploratoire 2D, 3D3,0
+ARV12731Atelier exploratoire en installation3,0
+ARV12831Projet d’artiste3,0
+ARV12931Interactivité, son et image3,0
+ARV13031Peinture: exploration avancée3,0ARV1133
+ARV13231Enjeux des arts au XXe siècle3,0
+ARV13331Approches critiques des arts3,0
+ARV13431Image de synthèse3,0ARI1033
+BDE10031Anatomie et perspective3,0
+BDE10061Synthèse en bande dessinée: réalisation6,0BDE1063
+BDE10231Atelier de scénarisation en bande dessinée3,0
+BDE10331Dessin et narration3,0
+BDE10431Récit et découpage graphique3,0
+BDE10531Analyse critique de la bande dessinée3,0
+BDE10631Esthétique de la bande dessinée3,0
+BDE10731Édition et diffusion de la bande dessinée3,0
+BDE10831Atelier d’encrage et de mise en couleur3,0
+BDE11031Sujet choisi en bande dessinée3,0
+BEA10021Création artistique et perspectives pédagogiques2,0
+BEA50011Séminaire d’intégration III1,0
+BEA50021Stage I : sensibilisation à la pratique de l’enseignement des arts visuels2,0
+BEA50061Stage II : stage d’enseignement des arts visuels au secondaire6,0BEA5002
+BEA50101Stage IV : stage d’enseignement en arts visuels et médiatiques10,0BEA5026
+BEA50211Séminaire d’intégration II1,0
+BEA50221Laboratoire d’initiation à la pratique de l’enseignement des arts au secondaire2,0
+BEA50261Stage III : stage d’enseignement des arts visuels au préscolaire et au primaire6,0BEA5006
+BEA50311Séminaire d’intégration IV1,0
+BEA50321Stage I : Sensibilisation au milieu et à la pratique de l’enseignement des arts plastiques au secondaire2,0
+BEA50561Stage II: Enseignement des arts platiques au secondaire6,0BEA5032
+BEA50661Stage III: Enseignement des arts plastiques au préscolaire et au primaire6,0BEA5056 ou DID2283 ou PED2123
+BEA51101Stage IV : Développement professionnel en enseignement des arts visuels (au primaire ou au secondaire)10,0PED2063 et PED2133
+BEM50021Stage I : sensibilisation à la pratique de l’enseignement de la musique2,0
+BEM50061Stage II: Stage en enseignement de la musique au secondaire6,0BEM5002
+BEM50101Stage IV : stage en enseignement de la musique10,0BEM5006 ou BEM5016
+BEM50161Stage III: Stage en enseignement de la musique au préscolaire et au primaire6,0BEM5006
+BEM50221Stage I : Sensibilisation au milieu et à la pratique de l’enseignement de la musique au secondaire2,0
+BEM50261Stage II : Enseignement de la musique en éducation préscolaire et en enseignement primaire6,0BEA5022
+BEM50361Stage III : Enseignement de la musique au secondaire6,0PED2123
+BEM51101Stage IV : Développement professionnel en enseignement de la musique (au primaire ou au secondaire)10,0
+BEP10011Portfolio II1,0PED1092
+BEP10031Fondements et organisation de l’éducation au préscolaire3,0
+BEP10211Portfolio III1,0BEP1001 ou BES1001
+BEP10231Développement de l’enfant du préscolaire et du primaire I3,0
+BEP10311Développement professionnel continu et portfolio IV1,0BEP1021
+BEP10331Initiation à la pratique en éducation au préscolaire3,0BEP1003
+BEP10411Culture scientifique1,5
+BEP10431Développement de l’enfant du préscolaire et du primaire II3,0BEP1023
+BEP10511Fondements épistémologiques en sciences humaines1,5
+BEP12031Développement de l’enfant en éducation préscolaire et en enseignement primaire I3,0
+BEP12231Développement de l’enfant du primaire II3,0BEP1023 ou BEP1203
+BEP50021Stage I : sensibilisation à la pratique de l’enseignement2,0
+BEP50051Stage II : développement des habiletés didactiques au préscolaire et au primaire5,0BEP5023
+BEP50061Stage III : Prise en charge de la classe6,0BEP5005 ou BEP5024
+BEP50101Stage IV : développement professionnel au préscolaire et au primaire10,0BEP5006
+BEP50211Séminaire d’intégration II1,0
+BEP50231Stage I : éveil à la pratique de l’enseignement au préscolaire et au primaire3,0
+BEP50241Stage II : habilitation didactique4,0BEP5002
+BEP50251Stage II : Développement des habiletés didactiques en éducation préscolaire et en enseignement primaire5,0PED5032
+BEP50261Stage III : Prise en charge de la classe en éducation préscolaire et en enseignement primaire6,0
+BEP50311Séminaire d’intégration III1,0
+BEP50331Stage I : Éveil à la pratique en éducation préscolaire et en enseignement primaire3,0PED2002
+BEP50411Séminaire d’intégration IV1,0
+BEP50611Séminaire d’intégration II1,0
+BEP50711Séminaire d’intégration III1,0
+BEP51101Stage IV : Développement professionnel continu et insertion professionnelle10,0
+BEP51221Séminaire d’intégration IV : Développement professionnel continu et insertion professionnelle2,0
+BES10011Portfolio II1,0PED1092
+BES10031Psychologie de l’adolescent3,0
+BES10211Portfolio III1,0BES1001
+BES20031Psychologie de l’adolescent3,0
+BES50051Stage II : développement des habiletés didactiques au secondaire5,0BES5023
+BES50101Stage IV : développement professionnel au secondaire10,0BES5036
+BES50231Stage I : éveil à la pratique de l’enseignement au secondaire3,0
+BES50251Stage II : Développement des habiletés didactiques en enseignement du français, des sciences humaines ou des mathématiques au secondaire5,0
+BES50261Stage III : prise en charge des groupes-classes au secondaire6,0BES5005
+BES50311Séminaire d’intégration III au secondaire1,0
+BES50331Stage I en enseignement (du français, des sciences humaines ou des mathématiques) au secondaire3,0PED2002
+BES50361Stage III : Prise en charge des groupes-classes en enseignement (du français, des sciences humaines ou des mathématiques) au secondaire6,0PED2123
+BES50511Séminaire d’intégration II1,0
+BES50611Séminaire d’intégration III1,0
+BES50711Séminaire d’intégration et portfolio IV1,0
+BES50811Séminaire d’intégration I1,0
+CIC302121Spécialité 33,0
+CIC304121Spécialité 43,0
+CIS301121Spécialité 13,0
+CIS302141Spécialité 23,0
+CIS305121Spécialité complémentaire3,0
+CMU10031Savoirs et contenus scientifiques3,0
+CMU10231Particularités et stratégies de la diffusion numérique3,0
+CMU10331Gestion et exploitation des collections numériques3,0ARI1033
+CMU10431Graphisme et possibilités multimédias3,0ARI1033
+CMU10531Mise en valeur, interprétation et cyberapprentissage3,0CMU1003 et CMU1023
+CMU10631Conception et articulation de l’espace virtuel3,0CMU1053
+CMU10931Projet appliqué en cybermuséologie3,0
+CMU50031Stage d’observation en milieu professionnel3,0
+COM10031Histoire des communications3,0
+COM10231Communication verbale3,0
+COM10531Communication et opinion publique3,0
+COM10631Communication et société3,0
+COM10831Messages informatifs3,0COM1043
+COM11031Relations publiques3,0
+COM11231Analyse de la communication3,0
+COM11331Médias québécois et canadiens3,0
+COM11431Information et communication3,0
+COM11531Rédaction et outils en communication3,0
+COM11631Étude de cas en communication publique3,0
+COM11731Projet en communication publique3,0
+COM11831Communication orale et écrite en gestion3,0
+COM1193A1English Communication Skills for Science Studies3,0
+COM12031Expression orale et expression écrite3,0
+COM12331Contrôle et manipulation de l’information3,0
+COM12431Communications internationales3,0
+COM12531Communication audiovisuelle3,0
+COM12631Communication publicitaire3,0
+COM12731Communication radiophonique3,0
+COM12831Médias alternatifs3,0
+COM12931Métiers du journalisme3,0
+COM23031Communication et prospective3,0
+COM23231Communication et rapports de genre3,0
+COM23331Politique et régulation en communication3,0
+COM23431Communication et gestion de crise3,0
+COM23531Plan de communication3,0
+COM23631Communication dans les organisations3,0
+COM23731Éthique, technologies de l’information et société3,0
+COM23831Introduction aux théories de la communication3,0
+COM23931La communication pour le changement social3,0
+COM24031Culture et communication3,0
+COM24231Information et actualité internationale3,0
+COM24331Médias numériques : problèmes et enjeux3,0
+COM24431Médias, sexualité(s) et société3,0
+COM50031Création web et propriété intellectuelle3,0
+CPT301091Contrepoint 12,0
+CPT302091Contrepoint 22,0
+CTB10101Stage en sciences comptables I0,0
+CTB10121Application au milieu professionnel2,0
+CTB10201Stage en sciences comptables II0,0
+CTB10211Vérification approfondie1,0
+CTB10311Comptabilité approfondie1,0
+CTB10411Fiscalité approfondie1,0
+CTB11031Introduction à la fiscalité3,0CTB1003 ou CTB1823
+CTB11231Fiscalité avancée3,0CTB1103
+CTB11431Comptabilité administrative I3,0
+CTB12431Comptabilité de management I3,0CTB1023 ou CTB1673
+CTB12531Comptabilité de management II3,0CTB1243
+CTB12631Comptabilité de management III3,0
+CTB14831Comptabilité administrative II3,0CTB1143
+CTB15831Comptabilité approfondie3,0CTB1733
+CTB15931Fiscalité approfondie3,0CTB1943
+CTB16231Préparation et présentation de l’information comptable3,0
+CTB16331Information comptable et prise de décision3,0CTB1623
+CTB16431Fiscalité des affaires3,0CTB1623 ou CTB2043
+CTB16531Comptabilité pour gestionnaires3,0
+CTB16731Comptabilité intermédiaire I3,0CTB1823
+CTB16831Comptabilité intermédiaire II3,0CTB1673
+CTB16931Comptabilité intermédiaire III3,0CTB1683
+CTB17031Constitution et transformation du contrôle de gestion moderne3,0CTB1673
+CTB17231Comptabilité spécialisée3,0
+CTB17331Comptabilité des investissements corporatifs3,0
+CTB17931Retraite et planification successorale3,0CTB1643
+CTB18031Gestion financière personnelle3,0
+CTB18231Introduction aux états financiers3,0
+CTB18331Analyse des états financiers3,0CTB1823
+CTB18431Fiscalité des particuliers3,0CTB1823
+CTB18531Initiation disciplinaire et professionnelle et intégration des connaissances disciplinaires3,0CTB1673 ou CTB1833
+CTB18631Immobilisations et instruments financiers simples3,0CTB1833 et FIN1143
+CTB18731Compréhension et contrôle des coûts3,0CTB1833
+CTB18831Sujets particuliers de comptabilité financière3,0CTB1863
+CTB18931Analyse et prise de décision3,0CTB1873
+CTB19031Fiscalité des entreprises et des investisseurs3,0CTB1843
+CTB19231Principes d’audit3,0CTB1833 et CTB2003
+CTB19331Comptabilité en contexte international3,0
+CTB19431Réorganisations et planification fiscale3,0CTB1903
+CTB19531Contrôle de gestion stratégique3,0
+CTB19631Évaluation des entreprises3,0
+CTB19731Audit d’états financiers et autres missions3,0CTB1923
+CTB19831Comptabilité des placements complexes3,0CTB1933
+CTB19931Activité d’intégration en sciences comptables3,0
+CTB20031Contrôle interne3,0CTB1833
+CTB20231Système d’information comptable3,0CTB1823
+CTB20331Gestion financière dans le secteur public3,0CTB2003
+CTB20431Comptabilité financière pour gestionnaire3,0
+CTB20531Comptabilité de gestion3,0CTB1623 ou CTB2043
+CTB20631Éthique et pratique professionnelle3,0
+CTB20731Logiciels de systèmes d’information comptable3,0CTB2023
+CTB20831Principes d’audit3,0
+CTB20931Audit d’états financiers et autres missions3,0
+CTB90011Vérification de gestion approfondie1,0
+DEG10031Fondements pratiques3,0
+DEG10231Processus, concept et méthodologie3,0ARI1033 et DEG1003
+DEG10431Éléments typographiques et édition3,0ARI1033
+DEG10531Illustration3,0ARI1033 et ARI1003
+DEG10631Approches graphiques tridimensionnelles3,0ARI1033
+DEG10731Affiche3,0
+DEG11031Documents et procédés d’impression3,0ARI1033
+DEG11231Sujet choisi en design graphique3,0
+DEG11331Éléments typographiques, édition et impression3,0ARI1033
+DEG11431Typo 1 : bases3,0
+DEG11531Typo 2 : expérimentation et intégration3,0DEG1143
+DEG11631Signalisation et cartographie3,0
+DEG11731Design d’interface et ergonomie3,0
+DEG11831Design d’événements et installations temporaires3,0
+DEV10031Développement communautaire dans le Sud3,0
+DEV10061Simulation des Nations Unies6,0
+DEV10231Impérialisme, décolonisation et post colonies3,0
+DEV10331Genre et développement3,0
+DEV10431Économie du développement3,0
+DEV10531Interculturalité et développement3,0
+DEV10631Dimensions régionales du développement3,0
+DEV10731Théories du développement3,0
+DEV10831Coopération internationale3,0
+DEV10931Problèmes socio-économiques contemporains du sud3,0
+DEV11031Perspectives québécoises et canadiennes du développement international3,0
+DEV11231Action et intervention humanitaires3,0
+DEV11331Afrique : politique et sociétés3,0
+DEV11431Asie : politique et sociétés3,0
+DEV11531Moyen-Orient et Afrique du Nord : politique et sociétés3,0
+DEV11631Amérique latine : politique et sociétés3,0
+DEV15031Simulation des Nations Unies3,0
+DID16231Didactique du français I : lecture au primaire3,0
+DID16331Didactique du français II : communication orale et écrite au primaire3,0DID1623
+DID16431Théorie et didactique des mathématiques au primaire I3,0
+DID16531Théorie et didactique des mathématiques au primaire II3,0DID1643
+DID17531Didactique de l’enseignement des arts au secondaire3,0
+DID17631Didactique de l’enseignement des arts médiatiques3,0
+DID17731Didactique du français langue seconde I3,0
+DID18931Didactique de la lecture au primaire3,0
+DID19031Didactique de l’écriture et de la grammaire au primaire3,0
+DID19231Didactique des mathématiques au primaire I3,0
+DID19331Didactique des mathématiques au primaire II3,0DID1923
+DID19431Didactique des sciences et technologie3,0
+DID19531Didactique de l’univers social3,0
+DID19631Didactique de la lecture littéraire et de l’oral au primaire3,0
+DID19731Didactique des arts au préscolaire et au primaire3,0
+DID19831Didactique des mathématiques au primaire III3,0DID1933 ou DID2143
+DID19931Didactique des mathématiques au secondaire I3,0
+DID20031Didactiques du français : fondements et processus en lecture et intégration des pratiques3,0
+DID20231Didactique du français : fondements et processus en communication orale et intégration des pratiques3,0
+DID20331Didactique du français : fondements et processus en écriture et intégration des pratiques3,0
+DID20431Didactique des mathématiques au secondaire II3,0
+DID20531Didactique des mathématiques au secondaire III3,0
+DID20631Didactique de l’univers social : histoire au secondaire3,0
+DID20731Didactique de l’univers social : géographie au secondaire3,0
+DID20831Didactique de l’appréciation esthétique3,0
+DID20931Didactique de l’enseignement des instruments3,0
+DID21031Didactique de la direction d’ensembles3,0
+DID21231Didactique de l’écriture et de la grammaire3,0
+DID21331Didactique des mathématiques I3,0MAT1002
+DID21431Didactique des mathématiques II3,0(DID2133 et MAT1002) ou DID1923
+DID21531Didactique des sciences humaines I3,0BEP1051
+DID21631Didactique de la lecture littéraire et de l’oral3,0DID1893
+DID21731Didactique des sciences et des technologies en adaptation scolaire au primaire3,0EFI2243
+DID21831Didactique de l’arithmétique en adaptation scolaire3,0MAT1293
+DID21931Didactique des probabilités et de la statistique en adaptation scolaire3,0DID1923 ou DID2183
+DID22031Didactique de l’arithmétique et de l’algèbre3,0
+DID22231Didactique de la géométrie3,0
+DID22331Didactique de l’algèbre et des fonctions3,0DID2203
+DID22431Didactique de la probabilité et de la statistique3,0DID2203
+DID22531Didactique de l’histoire : dimensions épistémologiques3,0
+DID22631Didactique de l’histoire : dimensions praxéologiques3,0DID2273
+DID22731Didactique de la géographie3,0
+DID22831Didactique des arts en éducation préscolaire et en enseignement primaire3,0BEP1023 ou BEP1203 ou EFI2363 ou PSY1553 ou PSY2363
+DID22931Didactique du multimédia en arts visuels3,0ARI1203
+DID23031Didactique des arts plastiques au secondaire3,0EFI2363 ou PSY1553
+DID23231Didactique de l’appréciation esthétique3,0ARI1023 ou ARI1143
+DID23331Didactique de l’enseignement des instruments de musique pour le secondaire3,0
+DID23431Didactique de l’enseignement musical en éducation préscolaire et en enseignement primaire3,0
+DID51031Didactique des sciences et technologie3,0BEP1041
+DRT10031Droit des affaires3,0
+DRT10431Principes de droit public3,0
+DRT10731Droit commercial3,0
+DRT11431Arbitrage des griefs3,0DRT1183
+DRT11731Droit appliqué en santé et sécurité au travail3,0
+DRT11831Droit des rapports collectifs du travail3,0
+DRT11931Aspects juridiques du commerce international3,0
+DRT12031Fondements et méthodologie du droit3,0
+DRT12231Droit de l’administration3,0
+DRT12331Droits et libertés fondamentaux3,0
+DRT12431Droit de l’entreprise3,0DRT1073
+DRT12531Droit de la faillite et de l’insolvabilité3,0
+DRT12631Droit du commerce international3,0
+DRT12731Droit de la consommation3,0
+DRT12831Droit immobilier3,0
+DRT12931Contrat de travail en encadrement juridique du lien d’emploi3,0
+ECN13731Économie du travail II3,0REI1703
+ECN14531Mondialisation : implications et prospective3,0
+ECN1453A1Globalisation, Impacts and Future3,0
+ECN14631Analyse microéconomique3,0
+ECN14731Analyse macroéconomique3,0
+ECN14831Principes d’économie pour gestionnaire3,0
+ECN15031Économie comportementale et sociale3,0
+ECN15231Économie immobilière3,0
+ECN15431Mesure des phénomènes économiques3,0
+ECN15531Microéconomie I : consommation, production et interventions économiques3,0ECN1633
+ECN15631Microéconomie II : incertitude, information imparfaite et bien-être économique3,0ECN1553 et ECN1603
+ECN15731Macroéconomie I : agrégats et politiques économiques3,0ECN1633
+ECN15831Macroéconomie II : croissance, fluctuations et crises3,0ECN1573 et ECN1603
+ECN15931Économie dans une perspective historique3,0
+ECN16031Mathématiques pour économistes3,0
+ECN16231Économétrie3,0ECN1603 et SSO1043
+ECN16331Économie contemporaine3,0
+ECN16431Commerce, finance et développement3,0
+ECO10031Agroforesterie3,0
+ECO10231Aménagement durable des écosystèmes3,0ECO1163
+ECO10331Aménagement et planification du territoire3,0ECO1163 et ECO1183
+ECO10431Biochimie appliquée à l’écologie3,0
+ECO10531Biologie et génétique de la conservation3,0ECO1063 et ECO1153
+ECO10631Biologie évolutive et biogéographie3,0
+ECO10731Biostatistiques3,0
+ECO10831Biotechnologies environnementales3,0ECO1043
+ECO10931Droit de l’environnement3,0
+ECO11031Écohydrologie3,0ECO1143
+ECO11231Écologie aquatique3,0ECO1143
+ECO11331Écologie comportementale3,0ECO1143 et ECO1063
+ECO11431Écologie de la biosphère3,0
+ECO11531Écologie des populations et des communautés3,0
+ECO11631Écologie du paysage3,0
+ECO11731Écologie forestière et sylviculture3,0ECO1193 et ECO1293
+ECO11831Économie écologique3,0
+ECO11931Écophysiologie3,0ECO1293
+ECO12031Éthique et gouvernance environnementale3,0
+ECO12231Évaluation environnementale3,0ECO1183
+ECO12331Écologie urbaine3,0
+ECO12431Écoinformatique3,0ECO1073
+ECO12531Gestion et aménagement de la faune3,0ECO1143 et ECO1153
+ECO12631Initiation aux systèmes socio-écologiques3,0ECO1163 et ECO1183
+ECO12731Relations plante-animal3,0ECO1153 et ECO1193 et ECO1293
+ECO12831Science des sols3,0
+ECO12931Systématique3,0
+ECO13231Communication pour les sciences biologiques3,0
+ECO50001Stage en milieu professionnel I0,0
+ECO50011Tournée écologique1,0
+ECO50021Méthodes d’échantillonnage2,0
+ECO50101Stage en milieu professionnel II0,0ECO5000
+ECO50231Projet intégrateur I3,0
+ECO50331Projet intégrateur II3,0ECO5023
+ECO50431Techniques de laboratoire3,0
+ECO50531Écologie et environnement à l’international3,0ECO1143
+ECR10231Écriture journalistique3,0
+ECR10631Aides technologiques à l’écriture3,0
+ECR10731Communication écrite I3,0
+ECR10831Communication écrite II3,0ECR1073
+ECR10931Méthodologie de la rédaction I3,0
+ECR11031Atelier de création3,0ECR1093 ou ECR1243
+ECR11231Méthodologie de la rédaction II3,0ECR1093
+ECR11331Atelier de pratique professionnelle I: rédaction, révision3,0
+ECR11431Atelier de pratique professionnelle II: terminologie et traduction3,0
+ECR11831Structure narrative I: techniques humoristiques3,0
+ECR12031Rédaction Web3,0ECR1243
+ECR12231Rédaction technique et scientifique3,0ECR1243
+ECR12331Atelier de synthèse3,0(ECR1093 ou ECR1243) et TRA1223
+ECR12431Rédaction professionnelle3,0ECR1083
+EFI10321Transition de l’élève en difficulté du primaire au secondaire2,0EFI2243
+EFI10421Développement professionnel continu de l’enseignant en adaptation scolaire2,0(EFI5041 ou EFI5071) et (EFI5010 ou EFI5110)
+EFI10521Transition vers le secondaire et la vie adulte et parcours différenciés2,0EFI2243
+EFI10621Transitions de l’élève en difficulté2,0EFI2253 ou EFI2283
+EFI18231Interventions particulières en langage3,0
+EFI18631Interventions particulières en psychomotricité3,0
+EFI18931Bilan orthopédagogique3,0
+EFI19531Interventions particulières en modification du comportement3,0
+EFI22031Interventions adaptées en alphabétisation3,0
+EFI22431Introduction à l’adaptation sociale et scolaire3,0
+EFI22531Prévention et soutien à l’élève en difficulté au préscolaire et au primaire3,0EFI2243
+EFI22631Motivation et réussite scolaire3,0
+EFI22731Interventions auprès des élèves ayant un handicap3,0
+EFI22831Prévention et soutien à l’élève en difficulté au secondaire3,0EFI2243
+EFI23031Didactique de l’univers social en adaptation scolaire au secondaire3,0
+EFI23231Didactique des sciences et de la technologie en adaptation scolaire au secondaire3,0
+EFI23331Les aides technologiques adaptées aux élèves ayant des besoins particuliers3,0EFI2243
+EFI23431Didactique de l’univers social en adaptation scolaire3,0EFI2243
+EFI23531Laboratoire clinique I - Évaluation et interventions orthopédagogiques3,0EFI1893 ou EFI5173 ou EFI5223
+EFI23631Développement de l’enfant et de l’adolescent3,0
+EFI50021Stage I: observation participante2,0
+EFI50081Stage III: intervention orthopédagogique8,0EFI5005 ou EFI5026
+EFI50101Stage IV : développement professionnel de l’enseignant en adaptation scolaire10,0EFI5031 et EFI5036
+EFI50211Séminaire d’intégration II1,0
+EFI50221Stage I : visite dans les milieux2,0
+EFI50251Stage II : intervention pédagogique au préscolaire et au primaire5,0EFI5002 ou EFI5022 ou EFI5243
+EFI50261Stage II : intervention pédagogique6,0EFI5002 ou EFI5022
+EFI50311Séminaire d’intégration III1,0
+EFI50321Stage I : Sensibilisation à l’adaptation scolaire2,0
+EFI50361Stage III : intervention en adaptation scolaire au préscolaire et au primaire6,0(EFI5025 ou EFI5026) et EFI5021
+EFI50381Stage III : intervention orthopédagogique au préscolaire et au primaire8,0EFI5026
+EFI50411Séminaire d’intégration IV1,0
+EFI50461Stage III: intervention en adaptation scolaire au secondaire6,0EFI5021 et EFI5026
+EFI50481Stage III : interventions orthopédagogiques au secondaire ( secteur des jeunes et secteur des adultes)8,0EFI5026
+EFI50511Séminaire d’intégration II1,0
+EFI50561Stage III : Intervention en adaptation scolaire6,0PED2123
+EFI50611Séminaire d’intégration III1,0
+EFI50661Stage II: Habilitation didactique et gestion de la classe6,0
+EFI50711Séminaire d’intégration IV1,0
+EFI51101Stage IV : Développement professionnel de l’enseignant en adaptation scolaire10,0
+EFI51731Laboratoire d’interventions orthopédagogiques en lecture3,0DID1623 ou DID1893 ou DID2003
+EFI51831Laboratoire d’interventions pédagogiques en mathématiques3,0DID1643 ou DID1653 ou DID1923 ou DID1933
+EFI52231Laboratoire d’interventions orthopédagogiques en écriture3,0DID1903 ou DID2033 ou DID2123
+EFI52331Laboratoire d’interventions orthopédagogiques en communication orale3,0
+EFI52431Stage I : sensibilisation à l’adaptation scolaire3,0
+EFI52531Laboratoire en adaptation scolaire : modélisation mathématique3,0DID2223 ou EFI5263
+EFI52631Laboratoire en adaptation scolaire : géométrie et mesure3,0DID2193 ou DID2203
+ENT10031Analyse de l’environnement et occasions d’affaires3,0
+ENT10231Création d’entreprise3,0ENT1003
+ENT10331Gestion et développement de PME3,0ENT1003
+ESP10031Espagnol I3,0
+ESP10231Espagnol II3,0
+ESP10331Espagnol intermédiaire I3,0
+ESP11031Espagnol par la lecture I3,0
+ESP11231Espagnol élémentaire I3,0
+ESP11331Espagnol élémentaire II3,0
+FIN10031Économétrie financière3,0ECN1473 et MQT1193
+FIN10211Gestion financière approfondie1,0
+FIN10231Administration financière3,0CTB1623 ou CTB2043
+FIN10331Analyse et planification financière3,0FIN1023
+FIN10731Analyse des valeurs et portefeuille3,0FIN1033
+FIN10931Finance avancée3,0FIN1033
+FIN11031Économie et finance internationales3,0ECN1473
+FIN1103A1International Economics and Finance3,0ECN1473 et FIN1023
+FIN11231Gestion du crédit3,0FIN1023
+FIN11331Financement du commerce international3,0
+FIN11431Évaluation des projets d’investissement3,0CTB1823
+FIN11531Politiques de financement3,0FIN1143
+FIN11631Ingénierie financière : produits dérivés3,0FIN1033
+FIN11731Application des tableurs en finance3,0FIN1033
+FIN11831Théories de la finance corporative3,0FIN1023
+FIN11931Finances immobilières3,0
+FIN17531Introduction à la finance3,0CTB1823
+FIN17631Politiques financières3,0FIN1753
+FIN17731Synthèse en finance3,0FIN1763
+FIN17831Fonds d’investissement et produits financiers3,0FIN1023 ou FIN1753
+FMA301081Formation musicale et auditive 11,5
+FMA302081Formation musicale et auditive 21,5
+FRA01431Atelier de français correctif : grammaire et orthographe3,0
+FRA01531Atelier de français correctif : rédaction3,0
+FRA10031Expression écrite française3,0
+FRA10331Français langue seconde I3,0
+FRA10531Grammaire descriptive et normative du français I3,0
+FRA10631Grammaire descriptive et normative du français II3,0FRA1053
+FRA10731Analyse et synthèse de textes3,0
+FRA10831Rédaction et amélioration de textes3,0
+FRA11031Littératures francophones I : le Québec3,0
+FRA11231Littératures francophones II: la France3,0
+FRA11331Méthodologie des études littéraires3,0
+FRA11731Le français et la communication orale3,0
+FRA12031Français langue seconde II3,0
+FRA12231Grammaire du français I : fondements et pratiques3,0
+FRA12431Grammaire du français II : fondements et pratiques3,0FRA1223
+FRA12531Intégration de la grammaire en classe de français au secondaire3,0FRA1223 et FRA1243
+FRA12631Atelier de création littéraire en classe de français au secondaire3,0
+FRA12731Lecture littéraire au secondaire3,0
+FRA13231Francophonie plurielle3,0
+FRA13331Littératures francophones III: l’Afrique subsaharienne3,0
+FRA13431Littératures contemporaines de la francophonie3,0
+FRA13531Littératie universitaire pour la formation à l’enseignement3,0
+FRA13831Introduction aux théories et méthodes critiques en études littéraires pour l’enseignement au secondaire3,0
+FRA23031Français I3,0
+FRA23231Français II3,0
+FRA23331Français III3,0FRA2303
+FRA50231Séminaire de lecture et d’analyse de textes littéraires pour l’enseignement au secondaire3,0
+GEN01001Formation en sécurité dans les laboratoires de génie0,0
+GEN01031Chimie générale3,0
+GEN01231Physique mécanique et optique3,0
+GEN10231Matériaux I3,0
+GEN10331Statique3,0GEN1523
+GEN10431Sciences graphiques3,0
+GEN10831Dynamique des systèmes I3,0GEN1503
+GEN10931Dynamique des systèmes II3,0GEN1083
+GEN11031Électronique3,0GEN1083
+GEN11231Électronique II3,0GEN1103
+GEN11431Électromagnétisme3,0GEN1523
+GEN11531Électrotechnique3,0GEN1083 et GEN1143
+GEN11631Architecture des ordinateurs3,0GEN1183
+GEN11731Systèmes asservis3,0GEN1093
+GEN11831Systèmes digitaux3,0
+GEN12231Analyse et traitement numérique des signaux3,0GEN1433
+GEN12431Conception de systèmes digitaux3,0INF4023
+GEN12731Modélisation et simulation3,0GEN1093
+GEN13031Théorie et technique de la transmission de données3,0GEN1223 et GEN1373
+GEN13331Conception de circuits intégrés3,0GEN1243
+GEN13631Économique du génie3,0
+GEN13731Statistiques de l’ingénieur3,0
+GEN13831Méthodes d’analyse de l’ingénieur3,0GEN1503 et INF1563
+GEN13931Génie logiciel : composants et réutilisation3,0INF4063 ou INF4393
+GEN14231Génie logiciel3,0INF1563
+GEN14331Systèmes de communication3,0GEN1523
+GEN14531Dynamique et contrôle des systèmes3,0GEN1083 et MAT1223
+GEN14631Concepts d’électronique digitale3,0MAT1233
+GEN14731Génie logiciel : Internet et réseaux3,0GEN1393
+GEN14831Systèmes en temps réel3,0INF3723
+GEN15031Mathématiques de l’ingénieur I3,0
+GEN15231Mathématiques de l’ingénieur II3,0
+GEN15331Acquisition et contrôle numérique3,0GEN1223
+GEN15431Ingénierie : aspects professionnels, éthiques, sociaux et environnementaux3,0
+GEN15531Ingénierie des circuits VLSI3,0GEN1333
+GEN15631Télécommunications mobiles3,0GEN1433
+GEN15731Conception et modélisation des systèmes de communications optiques3,0GEN1433
+GEN15931Robotique et vision artificielle3,0GEN1093
+GEN16031Conception de circuits micro-ondes3,0GEN1433
+GEN16231Introduction au génie, communication et rédaction technique3,0
+GEN16431Thermodynamique3,0
+GEN16531Électromagnétisme appliqué3,0GEN1143
+GEN16631Électronique de puissance3,0GEN1153
+GEN16731Réseaux électriques3,0GEN1153
+GEN16831Énergies renouvelables3,0GEN1643
+GEN16931Optimisation des systèmes énergétiques3,0GEN1093 et GEN1373
+GEN17031Optoélectronique et photonique3,0GEN1103
+GEN17231Sujets choisis en génie électrique et énergies durables3,0
+GEN17331Modélisation et simulation en génie électrique3,0GEN1093
+GEN17431Commande numérique3,0GEN1173 et GEN1223
+GEN17531Machines électriques3,0GEN1153
+GEN17631Réseaux intelligents3,0GEN1673 et GEN1693
+GEN18031Comportement des réseaux électriques3,0GEN1673 et GEN1753
+GEN18231Électricité industrielle3,0GEN1153 et GEN1173
+GEN18331Réseaux de distribution3,0GEN1153 et GEN1673
+GEN18431Protection des réseaux électriques1,0GEN1153 et GEN1673
+GEN18531Appareillage électrique et matériaux3,0GEN1153
+GEN18631Production de l’énergie électrique3,0GEN1673 et GEN1753
+GEN18731Projet de conception de grande envergure en génie électrique6,0
+GEN19731Projet de conception de grande envergure en génie6,0
+GEN50011Stage en milieu de travail I1,0
+GEN50021Projet de fin d’études en génie I2,0
+GEN50031Projet de fin d’études en génie électrique II3,0GEN5022
+GEN50111Stage en milieu de travail1,0
+GEN50221Projet de fin d’études en génie électrique I2,0
+GEN50231Projet de fin d’études en génie II3,0GEN5002
+GEO12831Le monde dans une perspective géographique3,0
+GEO13031Géographie physique et environnement3,0
+GEO13231Géographie du Québec / du Canada : espace et société3,0
+GEO13331Territoires, environnement et développement durable3,0
+GEO13431Géographie urbaine3,0
+GEO13531Histoire de la pensée géographique3,0
+GEO13631Géographie humaine et territoires3,0
+GEO13731Évaluation environnementale et aménagement du territoire3,0
+GPE11331Formation et perfectionnement3,0GPE1173
+GPE11531Planification des ressources humaines3,0GPE1163
+GPE11631Gestion de la fonction ressources humaines3,0REI1723
+GPE11731Analyse des emplois et évaluation du rendement3,0REI1723
+GPE11831Applications informatisées en gestion des ressources humaines3,0GPE1163
+GPE11931Cas en gestion des ressources humaines3,0REI1723
+GPE12431Le professionnel en ressources humaines dans l’organisation3,0REI1763
+GPE12531Systèmes informatisés en ressources humaines3,0
+HAR10031Enjeux des arts aux XVIIIe et XIXe siècles3,0
+HAR10231Approches théoriques et méthodologiques3,0
+HAR10331L’art et le musée3,0
+HAR10431Séminaire thématique3,0
+HAR10631Séjour de formation à l’étranger3,0
+HAR301081Harmonie 12,0
+HAR302091Harmonie 22,0
+HIS10031Initiation à la méthode historique3,0
+HIS10231Histoire de l’Antiquité3,0
+HIS10331Histoire du Moyen Âge3,0
+HIS10431Histoire de l’Europe: de la Renaissance à 18153,0
+HIS12731Histoire de l’Europe contemporaine : de 1815 à nos jours3,0
+HIS13031Histoire du Canada jusqu’en 18673,0
+HIS13231Histoire du Québec et du Canada : de 1867 à 19293,0
+HIS13331Histoire du Québec et du Canada : de 1929 à nos jours3,0
+HIS13431Histoire de l’Outaouais3,0
+HIS13531La diaspora francophone en Amérique du Nord3,0
+HIS13731Histoire des Amériques3,0
+HIS13831Le XXe siècle3,0
+HIS14031Histoire de l’Asie3,0
+HIS14231Histoire de la Russie et de l’Europe de l’Est3,0
+HIS14331Histoire de l’Afrique3,0
+HIS14431Histoire des Autochtones au Québec et au Canada3,0
+HIS14531Histoire et théorie des idéologies révolutionnaires3,0
+HST301091Histoire de la musique 12,0
+HST302091Histoire de la musique 22,0
+HST303091Histoire de la musique 32,0
+HST304091Histoire de la musique 42,0
+IMM10031Éléments d’évaluation immobilière3,0FIN1193
+IMM10231Méthodes du revenu en évaluation immobilière3,0ECN1523 et IMM1003
+IMM10331Méthodes du coût en évaluation immobilière3,0ECN1523 et IMM1003
+IMM10431Méthodes de comparaison en évaluation immobilière3,0ECN1523 et IMM1003
+IMM10531Rapport narratif d’évaluation immobilière3,0
+IMM10631Fiscalité et gestion municipale3,0DRT1283 et ECN1523
+IMM10731Négociation et communication en immobilier3,0
+INF00031Technologies de l’information pour gestionnaires3,0
+INF10101Stage en informatique I0,0
+INF10201Stage en informatique II0,0INF1010
+INF10301Stage en informatique III0,0INF1020
+INF11531Cybercriminalité et techniques d’investigation3,0INF1433
+INF11631Modélisation et conception orientée objet3,0(GEN1423 ou INF1173) et INF1573
+INF11731Analyse et gestion des exigences3,0
+INF11831Intelligence artificielle3,0MAT1153 et INF1563
+INF12231Affaires virtuelles et inforoutes3,0
+INF1223A1E-Commerce and Information Technologies3,0
+INF12331Gestion des systèmes répartis3,0
+INF12831Introduction à l’approche orientée objet3,0
+INF12931Génie logiciel et approche orientée objet3,0INF1283
+INF13331Technologies des réseaux3,0
+INF13431Administration des réseaux3,0INF3803 ou INF4523
+INF13631Analyse et conception de logiciels3,0INF4393
+INF13731Multimédia : concepts et méthodes3,0INF4033
+INF13831Conception de bases de données3,0INF4163 et INF4453
+INF13931Génie logiciel : langage et traduction3,0GEN1393
+INF14031Développement d’applications avec Visual Basic.Net3,0INF1563 ou INF4033
+INF14231Commutation et routage3,0INF1563 et (INF3803 ou INF4523)
+INF14331Initiation à la sécurité informatique3,0INF1563
+INF14431Sécurité des réseaux informatiques3,0INF1433
+INF14531Technologies du commerce électronique3,0INF1503 ou INF4533 ou SIG1003
+INF14631Éléments de médias numériques visuels3,0
+INF14731Entreposage et prospection de données3,0
+INF14831Programmation graphique 2D/3D3,0INF1403 ou INF4063
+INF14931Initiation à la création de site Web3,0
+INF15031Programmation Web avancée3,0INF1563 et (INF1493 ou INF4533)
+INF15231Technologies XML3,0INF1403
+INF15331Linux : concepts et programmation système3,0INF1563 ou INF4033
+INF15431Programmation avancée avec Java3,0INF1563
+INF15531programmation Windows3,0INF1403
+INF15631Programmation I3,0
+INF15731Programmation II3,0INF1563
+INF15831Développement des systèmes informatiques3,0INF1163
+INF15931Animation et jeux vidéo3,0INF1483
+INF16031Architecture orientée services3,0
+INF16231Réseaux sociaux3,0
+INF16331Programmation de systèmes embarqués en C/C++3,0INF1563 et INF1643
+INF16431Architecture des ordinateurs II3,0INF1563 ou INF4023
+INF33631Utilisation des bases de données3,0INF1173 ou INF4323
+INF34731Assurance de la qualité3,0GEN1423 ou INF1173
+INF35231Projet d’intervention I3,0
+INF37231Systèmes d’exploitation3,0INF1643 ou INF4023
+INF38031Télématique3,0
+INF40031Génie logiciel I3,0
+INF40231Architecture des ordinateurs I3,0
+INF40331Techniques de programmation I3,0
+INF40631Structures des informations I3,0INF1563
+INF40831Langages de programmation3,0INF4063
+INF41231Outils informatiques3,0
+INF41331Aspects logiques de la programmation3,0MAT1153
+INF41431Algorithmique I3,0INF4063 et MAT1153
+INF41631Techniques de bases de données3,0INF1563 et (GEN1423 ou INF1173)
+INF41731Projet synthèse3,0
+INF41831Interfaces personne-ordinateur3,0GEN1423 ou INF1173
+INF41931Gestion des projets informatiques3,0
+INF42231Langages formels3,0MAT1153
+INF42331Gestion de la ressource information3,0
+INF42531Programmation orientée objet3,0INF4033
+INF42931Sujets choisis en informatique3,0
+INF43231Analyse et modélisation3,0
+INF43331Synthèse et présentation de l’information3,0
+INF43431Application des tableurs en gestion3,0
+INF43731Sujets choisis en informatique de gestion3,0
+INF43931Structures des données et algorithmes3,0INF4253
+INF44531Programmation en Cobol3,0INF1563 ou INF4033
+INF45031Réalité virtuelle3,0
+INF45231Réseaux d’ordinateurs3,0INF1563
+INF45331Technologies internet3,0
+INF90221Introduction au système d’exploitation UNIX2,0INF9041
+LNG10731Problèmes de grammaire3,0
+LNG11031Histoire de la langue française3,0
+LNG11231Français québécois3,0
+LNG11331Grammaire descriptive du français3,0
+LNG11531Linguistique comparée I: lexicologie3,0
+LNG11631Linguistique comparée II: grammaire et stylistique3,0
+LNG12331Lexique du français moderne3,0
+LNG12831Grammaire normative pour langagiers3,0
+LNG12931Terminologie et terminotique3,0LNG1363
+LNG13031Outils informatiques pour langagiers3,0
+LNG13231Outils informatiques avancés pour langagiers3,0LNG1303
+LNG13631Documentation et terminologie3,0
+LNG13731Initiation à la recherche en études langagières3,0
+MAT01011Mathématiques préparatoires1,0
+MAT01021Mathématiques préparatoires2,0
+MAT01031Mathématiques générales3,0
+MAT01231Calcul différentiel et intégral3,0
+MAT01331Bases mathématiques3,0
+MAT01431Algèbre vectorielle et matricielle3,0
+MAT10021Fondements disciplinaires à l’enseignement des mathématiques2,0
+MAT10031Structures algébriques et applications3,0
+MAT10231Éléments de mathématiques pour l’informatique3,0
+MAT10531Algèbre linéaire3,0MAT1003
+MAT10731Analyse pour informaticiens3,0
+MAT10831Sujets choisis en mathématiques3,0
+MAT11531Structures discrètes3,0
+MAT12231Analyse de Fourier3,0MAT1233
+MAT12331Équations différentielles3,0
+MAT12431Probabilités et statistiques3,0
+MAT12531Probabilités en classe de mathématiques au secondaire3,0
+MAT12631Fondements arithmétiques en classe de mathématiques au secondaire3,0
+MAT12731Géométrie euclidienne en classe de mathématiques au secondaire3,0
+MAT12831Géométrie analytique et transformations en classe de mathématiques au secondaire3,0MAT1273
+MAT12931Fondements disciplinaires en mathématiques3,0
+MAT13031Laboratoire de résolution de problèmes3,0
+MAT13231Probabilités3,0
+MAT13331Fondements arithmétiques3,0
+MAT13431Géométrie euclidienne3,0
+MAT13531Géométrie analytique et transformations3,0
+MAT32031Histoire des mathématiques3,0
+MAT32231Fondements algébriques3,0
+MAT32431Analyse réelle3,0
+MAT32531Géométrie I3,0
+MAT32631Géométrie II3,0MAT3253
+MKT10731Publicité et promotion3,0MKT1093 ou MKT1183
+MKT10931Marketing social3,0
+MKT11031Gestion de la vente3,0MKT1183
+MKT11431Consommation et recherche commerciale3,0MKT1183
+MKT11531Approvisionnement, distribution et merchandising3,0MKT1183
+MKT11631Commerce international et exportation3,0MKT1183
+MKT1163A1International Trade and Export3,0ECN1473 et MKT1183
+MKT11731Publicité, promotion et relations publiques3,0MKT1183
+MKT11831Marketing3,0
+MKT12031Recherche commerciale en international3,0
+MKT12231Marketing international3,0MKT1183
+MKT12331Stratégie de marchés étrangers et de distribution internationale3,0
+MKT12431Recherche commerciale3,0MKT1183 et MQT1183
+MKT12531Stratégie de vente3,0MKT1183
+MKT12631Commerce et marketing électroniques3,0MKT1183
+MKT12731Comportement du consommateur3,0MKT1183
+MKT12831Communication en marketing3,0MKT1183
+MKT12931Séminaire de marketing3,0MKT1243
+MKT13031Marketing immobilier3,0
+MNG12431Gestion internationale3,0CTB1143 et MKT1183 et MNG1003
+MNG12631Mouvement coopératif3,0
+MNG13031Processus de gestion3,0
+MNG13231Habiletés de gestion3,0
+MNG13331Gestion des équipes3,0
+MNG13431Organisations et sociétés3,0
+MNG13531Acquisition, impartition, privatisation, alliance et fusion3,0FIN1023 et MKT1183
+MNG13631Dimension culturelle et gestion internationale3,0MNG1303
+MNG1363A1Cultural Dimensions of International Management3,0MNG1303
+MNG1363E1Dimension cultural y gestion internacional3,0MNG1303
+MNG13731Analyse de l’environnement et occasions d’affaires3,0
+MNG13831Création d’entreprise3,0(CTB1623 ou CTB1673) et MKT1183
+MNG13931Gestion et développement de PME3,0
+MNG14031Gestion de la qualité3,0MNG1573 et MQT1183
+MNG14231Design, réingénierie et innovation3,0MNG1303
+MNG14331Gestion stratégique3,0
+MNG14431Développement des personnes, audit social et relation d’aide3,0
+MNG14531Entreprise et environnement sociopolitique3,0MNG1303
+MNG14631Gestion du changement3,0MNG1573 et MNG1593
+MNG14731Efficacité personnelle et technologies de l’information3,0
+MNG14831Gestion des opérations et de la production3,0
+MNG14931Principes de contrôle des stocks et des opérations3,0
+MNG15031Logistique du commerce international3,0
+MNG15231Entrepreneuriat mondial3,0
+MNG15331Gestion du commerce international3,0
+MNG15431Gestion des approvisionnements3,0
+MNG15531Responsabilités sociales et environnementales des organisations3,0
+MNG15731Management3,0
+MNG15831Éthique des affaires et responsabilité sociale3,0
+MNG15931Comportement organisationnel3,0
+MNG16031Management interculturel3,0MNG1573
+MNG16231Théories des organisations3,0MNG1573
+MNG16331Introduction à la gestion de projet3,0INF4123 et MNG1573
+MNG16431Environnement sociopolitique de l’entreprise3,0MNG1573
+MNG16531Gestion des finances publiques3,0CTB1623 ou CTB2043
+MNG16631Créativité et innovation en gestion3,0
+MNG16731Leadership et direction des organisations3,0MNG1593
+MNG16831Gestion immobilière3,0
+MNG16931Compétences méthodologiques en administration3,0
+MNG50231Projet d’intervention3,0
+MQT10031Analyse statistique I3,0
+MQT10531Statistiques pour économistes3,0
+MQT10931Modèles mathématiques3,0
+MQT11331Introduction à la biostatistique3,0
+MQT11431Statistiques et utilisation de données3,0
+MQT11831Méthodes statistiques3,0
+MQT11931Modèles d’optimisation en gestion3,0MQT1183
+MQT12031Éléments de mathématiques pour la gestion3,0
+MQT12231Introduction à la statistique de gestion3,0MAT0103
+MSL10031Introduction à la muséologie3,0
+MSL10061Synthèse en muséologie et patrimoines6,0
+MSL10331Collection et conservation3,0
+MSL10431Musées: éducation et publics3,0
+MSL10531Exposition: théorie et pratique3,0
+MSL10631Technologies et musées3,0ARI1033
+MSL10731Muséographie I: conception et scénarisation3,0MSL1043 et MSL1053
+MSL10831Patrimoine: théorie et pratique3,0
+MSL11031Organisation des institutions patrimoniales3,0
+MSL11231Musée et société: enjeux contemporains3,0
+MSL11431Musée et images3,0
+MSL11531Expographie3,0MSL1043 et MSL1053
+MSL11631L’objet muséal3,0
+MSL11731Financement, production et charge de projet3,0
+MSL11831Histoire des musées3,0
+MSL50031Stage I en muséologie et patrimoines: observation3,0
+MSL50051Stage en muséologie et patrimoines5,0
+MUE301081Ensemble 11,0
+MUE302081Ensemble 21,0
+MUE303081Petits et grands ensembles1,0
+MUE304081Ensemble 41,0
+OPT10031Optique, œil et fonctions visuelles3,0
+OPT10231Techniques d’évaluation des amétropies et des fonctions visuelles3,0
+OPT10331Démarche clinique et pratique3,0
+OPT50021Ateliers pratiques I2,0
+OPT50221Ateliers pratiques II2,0
+PED 50021Stage I: sensibilisation à la pratique de l’enseignement2,0
+PED10711Communication avec les intervenants en milieu scolaire1,0
+PED10811Pédagogie et applications techniques : domaine du français1,0
+PED10911Pédagogie et applications techniques : domaines de l’univers social1,0
+PED10921Séminaire d’introduction et portfolio I2,0
+PED11011Pédagogie et applications techniques : domaines des mathématiques et des sciences et technologie1,0
+PED11021Projet interdisciplinaire en enseignement au secondaire2,0
+PED18231Gestion de classe et discipline3,0
+PED20021Introduction aux programmes2,0
+PED20221Communication avec les intervenants en milieu scolaire2,0
+PED20231Introduction à la recherche en éducation3,0
+PED20531Histoire et théories de l’éducation3,0
+PED20631Évaluation, régulation et bilan des apprentissages3,0
+PED20731Pédagogie et environnements d’apprentissage numérisés en contexte disciplinaire3,0
+PED20831Gestion de classe et efficacité professionnelle3,0PED1823 ou PED2123
+PED20931Fondements et théories de l’apprentissage scolaire3,0
+PED21031Laboratoire d’initiation à la pratique de l’enseignement en adaptation scolaire3,0
+PED21231La gestion de la classe et l’exercice de la discipline I : fondements théoriques et pratiques de la gestion de la classe3,0
+PED21331La gestion de la classe et l’exercice de la discipline II : mises en pratique et efficacité professionnelle3,0PED1823 ou PED2123
+PED21431Introduction à la recherche en éducation3,0
+PED21531Différenciation pédagogique3,0
+PED21631Technopédagogie en contexte disciplinaire3,0
+PED50021Stage I : sensibilisation à la pratique de l’enseignement2,0
+PED50131Stage en enseignement hors Québec3,0BEA5006 ou BEA5056 ou BEM5006 ou BEM5026 ou BEP5005 ou BEP5025 ou BES5005 ou BES5025 ou EFI5025 ou EFI5026 ou EFI5066
+PED50221Projet synthèse en enseignement des arts visuels au primaire2,0
+PED50241Stage II : habilitation didactique4,0PED5002
+PED50321Laboratoire d’initiation à la pratique en éducation préscolaire et en enseignement primaire2,0
+PED50531Stage I: rétroaction de l’acte pédagogique (étudiant en exercice)3,0
+PED54031Laboratoire d’initiation à la pratique de l’enseignement au préscolaire et au primaire3,0
+PED54231Laboratoire d’initiation à la pratique de l’enseignement au secondaire3,0
+PHI00031Raisonnement et pensée critique3,0
+PLS11031Comportement organisationnel3,0
+PLS11831Initiation à la communication interpersonnelle3,0
+PLS12431Psychosociologie des attitudes3,0
+PLS12531Participation et travail en groupe3,0
+PLS12631Leadership, influence et pouvoir3,0
+PLS13831Psychologie sociale et organisation de milieu3,0
+PLS13931Psychosociologie de la vie moderne3,0
+PLS14031Initiation à l’animation de groupe3,0
+PLS14231Résolution de problèmes et gestion de conflits3,0
+PLS14531Gestion du stress, coping et adaptation3,0
+PLS50031Projet d’intervention en animation3,0PLS1403 et PLS1183
+POL10631Introduction à la pensée politique3,0
+POL10731Fondements de l’analyse politique3,0
+POL10831Vie politique municipale3,0
+POL10931État et pouvoir économique dans les sociétés contemporaines3,0
+POL11031Activité d’intégration des connaissances majeure/mineure3,0
+POL11231Théories politiques contemporaines3,0
+POL11331Partis politiques3,0
+POL11431Mouvements et idéologies politiques au Québec3,0
+POL11531Pouvoirs politiques et pouvoirs économiques au Canada et au Québec3,0
+POL11731Systèmes politiques étrangers : États-Unis3,0
+POL11831Politiques étrangères3,0
+POL11931Politiques publiques locales et lutte contre la pauvreté3,0
+POL12231Organisations internationales3,0
+POL12331Histoire et théorie de la démocratie3,0
+POL12431Histoire et théories du libéralisme3,0
+POL12531Processus politiques dans la société contemporaine3,0
+POL12631Système mondial et relations internationales3,0
+POL12731Politiques et administration publiques3,0
+POL12831Politique au Canada et au Québec3,0
+PRE00031Exploration disciplinaire3,0
+PRE00231Activité d’intégration3,0
+PRE00331Éléments de physique et de chimie3,0
+PSE10031Approches et modèles en intervention psychosociale3,0
+PSE10231Interventions et identité professionnelle en psychoéducation3,0PSE1463
+PSE10631Familles à risques et en difficulté: problématiques et interventions3,0
+PSE11431Approche communautaire et intervention3,0
+PSE11531Problématiques et difficultés spécifiques d’adaptation3,0
+PSE1153B1Problématiques et difficultés spécifiques d’adaptation :approfondissement clinique de la délinquance et de la criminalité3,0
+PSE1153C1Problématiques et difficultés spécifiques d’adaptation : délinquance sexuelle3,0
+PSE1153D1Problématiques et difficultés spécifiques d’adaptation : la mort et le deuil3,0
+PSE1153E1Problématiques et difficultés spécifiques d’adaptation : les élèves en difficulté d’apprentissage3,0
+PSE1153F1Problématiques et difficultés spécifiques d’adaptation : minorités sexuelles3,0
+PSE1153G1Problématiques et difficultés spécifiques d’adaptation : troubles de comportement des enfants3,0
+PSE1153H1Problématiques et difficultés spécifiques d’adaptation : problèmes d’adaptation à l’adolescence : fugue, itinérance et violence3,0
+PSE1153I1Problématiques et difficultés spécifiques d’adaptation: la violence familiale3,0
+PSE1153J1Problématiques et difficultés spécifiques d’adaptation: comportement alimentaire.3,0
+PSE1153K1Problématiques et difficultés spécifiques d’adaptation: milieu scolaire3,0
+PSE11631Réseaux de services et aspects juridiques de l’intervention psychoéducative3,0
+PSE11731Clientèles et interventions en délinquance et en criminalité3,0
+PSE11831Expression et créativité en intervention psychoéducative3,0
+PSE11931Réalité familiale, vulnérabilité et soutien parental3,0
+PSE12031Observation et évaluation des difficultés d’adaptation psychosociale3,0
+PSE12231Approche psychoéducative, clientèles et attitudes professionnelles3,0
+PSE12331Clientèles et interventions en petite enfance3,0
+PSE12531Clientèles et interventions en déficience intellectuelle3,0
+PSE13031Clientèles et interventions en troubles du spectre de l’autisme3,0
+PSE13231Évaluation de programmes I : Les besoins et analyse des programmes3,0
+PSE13331Problèmes sociaux émergents/contemporains3,0
+PSE13431Sensibilisation à la pratique psychoéducative3,0
+PSE13531Méthodologie scientifique : Introduction3,0
+PSE13631Développement de la personne : Enfance et adolescence3,0
+PSE13731Observation et entrevues en psychoéducation3,0
+PSE13831Développement de la personne : Âge adulte et personne vieillissante3,0
+PSE13931Méthodologie scientifique : Approfondissement3,0PSE1353
+PSE14031Clientèles et interventions en contexte scolaire3,0
+PSE14231Laboratoire 1 : Relation d’aide et utilisation psychoéducative du vécu3,0
+PSE14331Difficultés d’adaptation associées aux troubles mentaux 2 : Âge adulte3,0
+PSE14431Élaboration et utilisation des instruments de mesure en psychoéducation3,0PSE1373
+PSE14531Laboratoire 2 : Planification, organisation et animation en intervention psychoéducative3,0PSE1423 ou PSE5053
+PSE14631Évaluation psychoéducative des difficultés d’adaptation psychosociale3,0PSE1443
+PSE14731Laboratoire 3 : Interventions en situation de crise3,0PSE1423
+PSE14831Difficultés d’adaptation et clientèles émergentes/contemporaines3,0
+PSE14931Initiation aux plans d’intervention en psychoéducation3,0
+PSE15231Difficultés d’adaptation associées aux troubles mentaux 1 : Enfance et adolescence3,0
+PSE50011Laboratoire de pratiques collaboratives interprofessionnelles1,0
+PSE50031Laboratoire : attitudes professionnelles en intervention psychoéducative3,0
+PSE50061Stage I: observation, évaluation, intervention individuelle et de groupe6,0PSE5003 et PSE1453 et PSY1523
+PSE50091Stage II : organisation et animation de l’intervention psychoéducative9,0PSE5043
+PSE50361Stage I : Planification, organisation et animation de l’intervention psychoéducative6,0PSE1453
+PSE50431Stage I : planification de l’intervention psychoéducative3,0PSE1373 et PSE1453
+PSE50461Stage II : Planification, organisation et animation de l’intervention psychoéducative6,0PSE1463 et PSE5036
+PSE50531Laboratoire 1 : Relation d’aide et utilisation psychoéducative du vécu3,0
+PSM10031Sensibilisation aux pratiques de la psychologie3,0
+PSM50331Atelier d’observation en psychologie du développement3,0PSM1003
+PSM50431Atelier d’observation en psychologie en éducation3,0PSM1003
+PSM50531Atelier d’observation en analyse du comportement3,0PSM1003
+PSM50731Atelier d’observation en psychologie sociale3,0PSM1003 et PSY1703
+PSM50831Atelier d’observation en psychologie communautaire3,0PSM1003
+PSY14031Psychologie du développement de l’adulte3,0
+PSY15231Observation des comportements humains3,0
+PSY15431Développement socioaffectif de l’enfant et de l’adolescent3,0
+PSY15531L’évolution graphique chez l’enfant et l’adolescent3,0
+PSY15631Histoire de la psychologie3,0
+PSY15731Méthodologies de la recherche en psychologie3,0
+PSY15831Analyse quantitative en psychologie3,0
+PSY15931Introduction à la psychométrie3,0PSY1583
+PSY16031Bases psychobiologiques du comportement3,0
+PSY16331Psychologie de la perception3,0
+PSY16431Psychologie de l’apprentissage3,0
+PSY16531Processus cognitifs3,0
+PSY16631Psychologie de la motivation et des émotions3,0
+PSY16731Psychologie de la personnalité3,0
+PSY16831Psychologie du développement3,0
+PSY16931Psychopathologie descriptive3,0
+PSY17031Psychologie sociale3,0
+PSY17231Psychologie communautaire3,0
+PSY17331Psychologie différentielle des sexes3,0
+PSY17431Psychologie, cultures et ethnicité3,0
+PSY17531Psychologie dynamique3,0
+PSY17731Psychologie humaniste3,0
+PSY17931Psychologie en éducation3,0
+PSY18031Psychologie de la famille3,0
+PSY18331Psychologie comparée et éthologie3,0
+PSY18431Méthodes et techniques d’observation3,0PSY1573
+PSY18531Méthodes d’enquête3,0PSY1573
+PSY18631Recherche qualitative3,0PSY1573
+PSY18931Psychopathologie de l’enfant et de l’adolescent3,0PSY1753
+PSY19031Psychopathologie de l’adulte3,0PSY1753
+PSY19731Approches phénoménologiques3,0PSY1773
+PSY19831Individu créateur et entraînement à la créativité3,0
+PSY19931Psychologie de l’apprentis. & du développement en éducation3,0PSY1793
+PSY20031Psychologie de la marginalité en éducation : problèmes cognitifs3,0PSY1793
+PSY20231Psychologie de la marginalité en éducation : problèmes socioaffectifs3,0PSY1793
+PSY20331Psychologie e la douance et talent3,0PSY1793
+PSY20431Développement cognitif et métacognitif3,0PSY1653 et PSY1683
+PSY20731Psychologie du développement II3,0PSY1683
+PSY20831Analyse fonctionnelle du comportement3,0PSY2393
+PSY21731Thèmes avancés en cognition3,0PSY1633 et PSY1653
+PSY21831Psychobiologie du développement3,0PSY2633 et PSY2383
+PSY21931Psychologie des attitudes3,0PSY1703
+PSY22031Psychologie des relations interpersonnelles3,0
+PSY22231Psychologie de la communication3,0PSY1703
+PSY22431Psychologie des relations intergroupes3,0PSY1703 et PSY1743
+PSY22531Psychologie communautaire: approche préventive3,0PSY1723
+PSY22831Psychologie de l’environnement3,0PSY1723
+PSY23331Méthodes projectives3,0PSY1753
+PSY23431Théories et technique de l’entrevue3,0
+PSY23631Développement de l’enfant et de l’adolescent3,0
+PSY23831Introduction à la neuropsychologie3,0PSY2633
+PSY23931Psychologie comportementale et cognitive3,0
+PSY24031Psychologie du vieillissement3,0
+PSY24231Techniques avancées d’analyses quantitatives de données3,0PSY1583
+PSY24331Techniques avancées d’analyses qualitatives de données3,0
+PSY24431Introduction à l’évaluation et à l’intervention en psychologie clinique3,0
+PSY24531Cyberpsychologie3,0
+PSY24631Thèmes avancés en psychologie humaniste3,0PSY1773
+PSY24731Thèmes avancés en psychologie du développement3,0PSY1683
+PSY24831Thèmes avancés en psychologie comportementale et cognitive3,0PSY2393
+PSY24931Thèmes avancés en neuropsychologie3,0
+PSY25031Thèmes avancés en psychologie sociale et de la personnalité3,0PSY1703
+PSY25231Thèmes avancés en psychologie dynamique3,0PSY1753
+PSY25331Introduction à la psychopharmacologie3,0
+PSY25431Délinquance sexuelle et criminalité3,0
+PSY25531Hormones et comportement3,0
+PSY25631Psychologie de la mort et du deuil3,0
+PSY25731Psychologie de la santé3,0
+PSY25831Sommeil et rêves3,0
+PSY25931Psychologie de la sexualité3,0
+PSY26031Activité de recherche en psychologie I3,0
+PSY26231Activité de recherche en psychologie II3,0PSY2603
+PSY26331Biopsychologie3,0
+PSY26431Psychologie du développement personnel3,0
+PSY26531Relation d’aide et soutien psychologique3,0
+PSY26631Psychologie des groupes sociaux et des relations intergroupes3,0
+PSY26731Victimes de violence sexuelle3,0
+PSY26831Psychologie de la dépendance3,0
+PSY26931Toxicomanie et problématiques associées3,0
+PSY27031Soutien psychologique et entretien motivationnel3,0
+PSY27231Auteurs de violence sexuelle3,0
+PSY30531Laboratoire de pratique des tests en psychologie clinique3,0PSY1583 et PSY1593
+PSY50031Laboratoire de recherche expérimentale et quasi-expérimentale3,0PSY1573
+PSY50231Laboratoire de pratique des tests en psychologie de l’adulte3,0PSY1703
+PSY90031Relation d’aide et "thérapie de la réalité" à l’école I3,0
+PTG10031Portugais par la lecture I3,0
+PTG10231Portugais élémentaire I3,0
+PTG10331Portugais élémentaire II3,0
+REI10031Relations industrielles3,0
+REI10101Stage coopératif en relations industrielles I0,0
+REI10201Stage coopératif en relations industrielles II0,0REI1010
+REI10301Stage coopératif en relations industrielles III0,0REI1020
+REI10531Politiques de sécurité sociale et de sécurité du revenu3,0REI1703 ou REI1733
+REI10931Phénomène du syndicalisme3,0REI1553 et REI1153
+REI11031Psychologie du travail3,0
+REI11531Sociologie du travail3,0
+REI11631Politiques de main-d’oeuvre3,0REI1733
+REI11731Systèmes comparés de relations industrielles3,0REI1003
+REI11831Aspects économiques de la négociation collective3,0ECN1373 ou REI1323 ou REI1733
+REI11931Conflit industriel3,0REI1003
+REI12531Méthodologie en relations industrielles3,0
+REI12631Organisation du travail et participation à la gestion3,0REI1003
+REI12931Changement technique, travail et culture3,0REI1153
+REI13031Convention collective3,0REI1003
+REI13231Théories et processus de la négociation collective3,0REI1303
+REI13431Éléments de psychologie appliqués au travail3,0
+REI13631Carrière et évaluation des personnes en milieu de travail3,0GPE1173
+REI13731Introduction aux politiques publiques de travail3,0
+REI13931Politiques d’emploi3,0
+REI14031Politiques d’équité salariale et d’égalité d’accès à l’emploi3,0
+REI14231Politiques du travail dans les pays industrialisés3,0
+REI14331Intégration en relations industrielles et en ressources humaines3,0
+REI14531Sociologie des conflits de travail3,0REI1003
+REI14631Nouvelles formes d’organisation du travail3,0REI1003
+REI14731Sociologie du changement technique3,0
+REI14831Séminaire thématique en relations industrielles et projet d’intervention3,0
+REI15231Psychologie organisationnelle3,0
+REI15431Application de la convention collective3,0DRT1183 ou REI1303 ou REI1323
+REI15531Histoire du travail et des sociétés québécoise et canadienne3,0
+REI15631Gestion du risque en milieu de travail3,0REI1853
+REI15731Atelier de recherche en relations industrielles3,0
+REI15831Diagnostic et développement organisationnel3,0REI1723
+REI15931L’organisation, la gestion et le professionnel en RI3,0
+REI16031Régime fédéral de régulation du travail3,0DRT1293
+REI16231Cas en relations industrielles3,0REI1003
+REI16331Diversité et GRH internationale3,0REI1723
+REI16431Environnement, santé et travail3,0REI1853
+REI16531Gestion du rendement et des carrières3,0REI1753
+REI16631Intervention en santé et sécurité du travail3,0REI1853
+REI16731Politiques publiques du marché du travail3,0REI1703
+REI16831Prévention et gestion de l’incapacité au travail3,0REI1853 et (DRT1173 ou DRT1293)
+REI16931Séminaire thématique en santé et sécurité du travail3,0
+REI17031Emploi et salaire3,0
+REI17231Gestion des ressources humaines3,0
+REI17331Politiques économiques et marché du travail3,0REI1703
+REI17431Rémunération3,0REI1753 et (GPE1243 ou MNG1573 ou REI1593)
+REI17531Analyse d’emploi, profil de compétences et mesure en GRH3,0REI1723
+REI17631Stratégie en gestion des ressources humaines3,0REI1723
+REI17731Dotation3,0REI1753
+REI17831Élaboration et évaluation de programmes publics3,0REI1733
+REI17931Mondialisations et comparaisons internationales en relations du travail3,0REI1003
+REI18031Formation et développement des ressources humaines3,0REI1723
+REI18231Santé psychologique au travail3,0
+REI18331Relations du travail dans le secteur public3,0REI1003
+REI18431Gestion intégrée en santé et sécurité du travail3,0
+REI18531Introduction à la santé et sécurité du travail3,0
+REI18631Introduction à l’hygiène du travail3,0
+REI18731Introduction à l’ergonomie3,0REI1853
+REI18831Ergonomie et travail humain3,0REI1873
+REI18931Cas pratique en santé et sécurité du travail3,0REI1853
+REI50231Séminaire sur les pratiques syndicales3,0REI1093
+REI50531Séminaire de recherche en relations industrielles3,0REI1253 et MQT1143
+REI50631Séminaire pratique de la négociation collective3,0REI1323
+REI51931Séminaire thématique en relations industrielles3,0
+REL10531Le Christ Seigneur et Sauveur I3,0
+REL11331Fondements de la foi catholique et des grandes religions du monde3,0
+REL11431Éthique et culture religieuse3,0
+REL11631Éthique et culture religieuse : développement personnel et dimension psychosociale3,0REL1143
+REL50231Séminaire : monde contemporain et théologie3,0
+SIG10031Systèmes d’information pour gestionnaires3,0
+SIG10231Systèmes intégrés de gestion3,0
+SIG10331Gestion des processus d’affaires3,0SIG1023
+SIG10431Intelligence d’affaires3,0SIG1023
+SIG10531Architecture des systèmes d’information3,0SIG1033 et SIG1043
+SIG10631Simulation d’une entreprise intégrée3,0SIG1033 et SIG1043
+SIG10731Étude de faisabilité d’un système d’information3,0SIG1033 et SIG1043
+SME11031Santé mentale de l’enfant et de l’adolescent3,0
+SME11231Santé mentale et intervention3,0
+SME11431Santé mentale3,0
+SME11531Pratiques sociales et santé mentale3,0SME1143
+SOC10931Organisations3,0
+SOC11331Changements planifiés dans les systèmes sociaux3,0
+SOC11531Femmes et société3,0
+SOC11731Familles et groupes d’appartenance3,0
+SOC11931Condition masculine et pratiques sociales3,0
+SOC12231Problèmes sociaux et mouvements sociaux3,0
+SOC12331Rapports de genre et sociétés3,0
+SOC12431Pauvreté : processus, impacts et changements3,0TSO2423
+SOC12531Nouvelles réalités familiales3,0
+SOC12631Classes sociales et mouvements sociaux3,0
+SOC12731Sociologie urbaine3,0
+SOC12831Sociologie de la culture3,0
+SOC20031Sociologie de l’Afrique3,0
+SOC20431Sociologie de la connaissance3,0
+SOC20531Sociologie du genre3,0
+SOC23331Structure et dynamique des populations3,0
+SOC23931Diversité sociale au Québec et au Canada3,0
+SOC24431Courants et concepts sociologiques contemporains3,0
+SOC24731Sociologie de l’environnement3,0
+SOC25031Histoire de la pensée sociologique3,0
+SOC25331Sociologie de la famille3,0
+SOC25531Sociologie des organisations3,0
+SOC26531Mouvements sociaux et société québécoise3,0
+SOC26631Diversité culturelle et intervention sociale3,0
+SOC26731Science, technologie, information et société3,0
+SOC26831Introduction à la sociologie autochtone3,0
+SOC27031Valeurs et société3,0
+SOI10031Séminaire d’intégration disciplinaire3,0SSA1333
+SOI10231Expérience de santé: adultes et personnes agées I3,0SSA1163 et SSA1173 et SSA1363
+SOI10331Expérience de santé: adultes et personnes agées II3,0
+SOI10431Expérience de santé: situations de soins critiques3,0SSA1353
+SOI10531Rôles contemporains de l’infirmière clinicienne et de l’assistante infirmière-chef3,0
+SOI10631Expérience de santé: de la conception à l’adolescence3,0
+SOI10731Soins de plaies3,0
+SOI30931Soins infirmiers à la personne en phase terminale3,0
+SOI32531Évaluation physique3,0
+SOI33531Introduction aux sciences infirmières3,0
+SOI33731Dimensions éthiques et juridiques de la pratique infirmière3,0
+SOI33831Santé parentale et soins infirmiers3,0
+SOI33931Santé de l’enfance, de l’adolescence et soins infirmiers3,0
+SOI34031Problèmes de santé mentale et soins infirmiers3,0
+SOI34331Santé de l’adulte et soins infirmiers3,0
+SOI34431Santé des personnes âgées et soins infirmiers3,0
+SOI34531Santé des communautés et soins infirmiers3,0
+SOI34631Processus interatif et intersubjectif en pratique infirmière3,0
+SOI34731Méthodologie de la pratique infirmière3,0SSA1333
+SOI34931Atelier thématique en pratique infirmière I3,0
+SOI3493A1Atelier thématique en pratique infirmière I - Cardiologie3,0
+SOI3493B1Atelier thématique en pratique infirmière I - Gestion de la douleur3,0
+SOI3493C1Atelier thématique en pratique infirmière I - Personnes âgées3,0
+SOI3493D1Atelier thématique en pratique infirmière I - Prévention et contrôle des infections3,0
+SOI3493F1Atelier thématique en pratique infirmière I - Soins palliatifs et fin de vie3,0
+SOI35031Atelier thématique en pratique infirmière II3,0
+SOI35431Expérience de santé : l’unicité dans la diversité3,0
+SOI35531Expériences de la santé : transitions associées à la croissance et au développement3,0
+SOI35631Théories et pratique infirmière3,0SOI3353
+SOI35731Méthodes qualitatives de recherche en sciences infirmières3,0
+SOI35831Méthodes quantitatives de recherche en sciences infirmières3,0
+SOI35931Modèles conceptuels et théories pratique infirmière II3,0
+SOI36031Modèles conceptuels et théories en pratique infirmière III3,0SOI3593
+SOI36231Expérience de santé : groupes et collectivités3,0SOI3693 et SOI3583
+SOI36431Expérience de santé : famille en période périnatale3,0
+SOI36531Expérience de santé : l’enfant, l’adolescent et sa famille3,0
+SOI36631Expérience de santé : personnes présentant des problèmes de santé mentale3,0
+SOI36731Expérience de santé : adultes et personnes âgées3,0SSA1263
+SOI36831Expérience de santé : chronicité3,0
+SOI36931Intervention éducative en pratique infirmière3,0
+SOI37331Santé familiale et pratique infirmière3,0
+SOI50011Laboratoire de pratiques collaboratives interprofessionnelles1,0
+SOI50231Stage d’intégration3,0SOI3173
+SOI50731Expérience clinique : introduction aux soins infirmiers3,0SOI3353
+SOI51031Expérience clinique : personnes présentant des problèmes de santé mentale3,0SOI3663
+SOI51831Expérience clinique : famille3,0SOI3733
+SOI52731Expérience clinique : groupes et collectivités3,0SOI3623
+SOI52831Expérience clinique : jeunes familles en milieu naturel3,0SOI3643 et SOI3653
+SOI52931Expérience clinique : jeunes familles en milieu institutionnel3,0SOI1063 ou (SOI3643 et SOI3653)
+SOI53031Expérience clinique : personnes âgées en milieu naturel3,0
+SOI53231Expérience clinique : adultes et personnes âgées I3,0SOI1023
+SOI53331Expérience clinique : adultes et personnes âgées II3,0SOI1033
+SOI53431Expérience clinique : soins critiques3,0SOI1043
+SOI53531Expérience clinique : chronicité3,0SOI3683
+SOI53631Expérience clinique en gestion des services de santé3,0ADM1863
+SOI90531Préparation à l’examen québécois d’autorisation à la pratique infirmière3,0
+SSA11631Structures et fonction biologique humaine I3,0
+SSA11731Structure et fonction biologique humaine II3,0
+SSA12431Microbiologie et immunologie3,0
+SSA12631Pharmacothérapie3,0
+SSA12731Exploration d’interventions alternatives en santé3,0
+SSA12931Intervention auprès de l’alcoolique et du toxicomane3,0
+SSA13331Modèles et théories en sciences infirmières3,0
+SSA13431Physiopathologie I3,0SSA1163 et SSA1173 et SSA1363
+SSA13531Physiopathologie II3,0
+SSA13631Structure et fonction biologique humaine III3,0
+SSA13731Expérience de santé : la perte et le deuil3,0
+SSO10031Politiques et programmes socioéconomiques3,0
+SSO10231Processus de recherche en sciences sociales3,0
+SSO10331Activité d’intégration des connaissances en sciences sociales3,0
+SSO10431Méthodes quantitatives en sciences sociales3,0
+SSO10531Méthodes qualitatives en sciences sociales3,0
+SSO10631Sondage et techniques de collecte de données3,0
+SSO10731Activité thématique en sciences sociales3,0
+SSO10831Canada et Québec: aspects sociaux, culturels et politiques3,0
+SSO10931Processus et outils juridiques3,0
+SSO20031Villes et métropoles3,0
+SSO50061Stage6,0
+SST10431Nouvelles technologies et santé et sécurité au travail3,0REI1273 ou REI1873
+SST10531Toxicologie industrielle3,0
+SST10731Techniques d’enquête3,0
+SST10931Élaboration de programmes de prévention3,0REI1853
+SST11331Gestion des dossiers en santé et sécurité au travail3,0DRT1173 ou DRT1293
+SST11531Hygiène du travail3,0REI1863
+SST11931Politiques publiques en santé et sécurité au travail3,0
+TESTANGLAIS1Test de classement en rédaction anglaise0,0
+TRA10031Initiation à la traduction française3,0FRA1003
+TRA11731Réalisation de projet3,0
+TRA11831Activité d’intégration professionnelle3,0
+TRA11931Méthodologie de la traduction I3,0
+TRA12031Méthodologie de la traduction II3,0TRA1193
+TRA12231Atelier de traduction3,0TRA1203
+TRA12331Initiation à la traduction littéraire3,0TRA1203
+TRA12431Traduction anglaise I3,0ANG1263 ou ANG1273
+TRA12531Traduction anglaise II3,0TRA1243
+TRA12631Révision de textes3,0
+TRA12731Traduction administrative et commerciale3,0
+TRA13031Projets langagiers en partenariat avec le milieu professionnel3,0
+TRA13331Adaptation de textes3,0TRA1203
+TRA13431Initiation à la traduction juridique3,0TRA1223 et TRA1263
+TRA13531Traduction automatique et postédition3,0TRA1223 et TRA1263
+TRA13631Initiation à la traduction multimédia3,0TRA1203
+TRA13731Atelier de révision3,0TRA1263
+TRA13831Traduction technique et scientifique3,0TRA1203
+TSO10011Préparation au travail intellectuel en travail social1,0
+TSO10031Introduction au travail social3,0
+TSO10041Intervenir en milieu communautaire3,0
+TSO10051Questions sociales contemporaines3,0
+TSO10061Recherche et analyse de pratiques3,0TSO1001 et TSO2353
+TSO10231Théories sociologiques et travail social3,0
+TSO10331Théories psychologiques et travail social3,0
+TSO10431La personne, relations interpersonnelles et contexte social3,0
+TSO11631Méthodologie de recherche en travail social I3,0
+TSO21931Méthodologie de l’intervention sociale de groupe3,0TSO1003
+TSO22231Méthodologie de l’intervention sociale personnelle3,0TSO1003
+TSO22331Méthodologie de l’organisation communautaire3,0SOC2653 et TSO1003
+TSO22431Politiques sociales3,0
+TSO22731Théories et pratiques de l’organisation communautaire3,0TSO2233
+TSO22831Théories et pratiques d’intervention sociale personnelle I3,0TSO2223
+TSO23031La relation d’aide en travail social3,0
+TSO23231Méthodologie du travail social de groupe3,0TSO1003 et TSO2303
+TSO23331Méthodologie de l’intervention psychosociale3,0TSO2303 et TSO1003
+TSO23431Théories et pratiques de l’intervention psychosociale3,0TSO2333
+TSO23531Méthodologie de recherche en travail social3,0
+TSO23631Théories et pratiques du travail social de groupe3,0TSO2323
+TSO23731Travail social et dépendances3,0
+TSO23831Travail social auprès des enfants et des adolescents3,0
+TSO23931Travail social et vieillissement3,0
+TSO24031Enjeux et défis du travail social contemporain3,0
+TSO24231Fondements théoriques du travail social3,0
+TSO24331Savoir être et pratique réflexive3,0
+TSO24431Théories et pratiques de l’intervention en travail social auprès des personnes3,0TSO1003
+TSO24531Théories et pratiques de l’intervention collective3,0SOC1223 et TSO1003
+TSO24631Processus d’intervention en travail social auprès des personnes3,0TSO2443
+TSO24731Méthodologie de l’intervention collective3,0TSO2453
+TSO24831Introduction au travail social de groupe3,0TSO1003 et TSO2463
+TSO24931Nouveaux risques sociaux et protection sociale3,0
+TSO25031Déontologie, éthique et délibération en travail social3,0
+TSO25231Collaboration, négociation et communication interprofessionnelles3,0
+TSO25331Diversité sexuelle et de genre3,0
+TSO25431Travail social et protection de l’enfance3,0
+TSO25531Intervention auprès des enfants et des adolescents3,0
+TSO25631Intervention différenciée selon le genre3,0
+TSO25731Travail social et réadaptation : intervenir en DI, TED, DP3,0
+TSO25831Travail social de groupe avancé3,0TSO2483
+TSO25931Travail social international3,0
+TSO26031Dépendances et intervention3,0
+TSO26231École d’été en territoire autochtone3,0
+TSO30931Développement communautaire comparé3,0
+TSO41731Intervention familiale3,0TSO2463
+TSO41831Interventions féministes3,0
+TSO50011Laboratoire de pratiques collaboratives interprofessionnelles1,0
+TSO50031Laboratoire : initiation aux champs de pratique du travail social3,0
+TSO50041Observations, interventions et analyses des milieux et des pratiques en travail social4,0
+TSO50071Stage 1 : Intégration de la pratique du travail social7,0TSO5004
+TSO50091Stage 2 : Consolidation de la pratique du travail social9,0TSO5007
+TSO51121Stage 2 : Consolidation de la pratique du travail social à l’international12,0TSO5007
+TSO52121Stage II : consolidation de la pratique du travail social12,0TSO5226 ou TSO5236
+TSO52361Stage I : expérimentation de la pratique du travail social6,0TSO5003 ou TSO5933
+TSO61031Crédits de recherche3,0TSO1001 et TSO2353
+TSO61231Projet d’engagement social3,0TSO1001 et TSO1003
+TXM13531Théories des toxicomanies et modèles de consommation3,0
+TXM14031Réadaptation des toxicomanes3,0
+TXM15031Promotion de la santé et prévention des toxicomanies3,0
+TXM26011Intervention auprès de l’entourage1,0
+TXM35031Ateliers pratiques en réadaptation3,0
+TXM37031Ateliers pratiques en prévention3,0TXM1503
