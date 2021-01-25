@@ -5,11 +5,11 @@ import {
   calculateGradePoints,
   finalGPA,
   finalPoints,
-  IFormInput,
   semesterCalculateGPA,
   semesterGradePoints,
   totalCredits,
 } from '../actions/utils';
+import { IFormInput } from '../types/types';
 
 interface IResult {
   isFirstSemester: boolean;

@@ -1,57 +1,44 @@
 //FIXME: typesafe some of the any type
-export interface IFormInput {
-  currentGPA: number;
-  currentCreditsEarned: number;
-  creditsEarned1: number;
-  creditsEarned2: number;
-  creditsEarned3?: number;
-  creditsEarned4?: number;
-  creditsEarned5?: number;
-  resultEarned1: string;
-  resultEarned2: string;
-  resultEarned3?: string;
-  resultEarned4?: string;
-  resultEarned5?: string;
-  creditsEarnedArray?: number[];
-  resultEarnedArray?: string[];
+import { CoursUqoList } from '../assets/cours';
+import { IFormInput, notationList, pointsList } from '../types/types';
+
+/** Fonction qui prend le sigle du cours selon le input
+ * entrés par l'utilisateur
+ */
+//TODO: validation si le sigle entrée n'existe pas dans la liste
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function getItemFromList(input: string): any {
+  const element = CoursUqoList.filter(element => element.sigle === input);
+  return element;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-interface IResultsList {
-  creditsEarned: number[];
-  resultEarned: string[];
+/** Fonction qui prend le sigle du cours selon le input
+ * et le sigle entrés par l'utilisateur
+ */
+export function getSigle(input: string): string {
+  const element = getItemFromList(input);
+  const sigle = element[0].sigle;
+  return sigle != null ? sigle : '';
 }
 
-export const initialValues: IFormInput = {
-  currentGPA: 0,
-  currentCreditsEarned: 0,
-  creditsEarned1: 0,
-  creditsEarned2: 0,
-  creditsEarned3: 0,
-  creditsEarned4: 0,
-  resultEarned1: '',
-  resultEarned2: '',
-  resultEarned3: '',
-  resultEarned4: '',
-};
+/** Fonction qui prend le titre du cours selon le input
+ * et le sigle entrés par l'utilisateur
+ */
+export function getTitre(input: string): string {
+  const element = getItemFromList(input);
+  const titre = element[0].titre;
+  return titre != null ? titre : '';
+}
 
-const notationList: string[] = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'E'];
-const pointsList: number[] = [4.3, 4.0, 3.7, 3.3, 3.0, 2.7, 2.3, 2.0, 1.7, 1.3, 1.0, 0];
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const notationMap = {
-  'A+': 4.3,
-  A: 4.0,
-  'A-': 3.7,
-  'B+': 3.3,
-  B: 3.0,
-  'B-': 2.7,
-  'C+': 2.3,
-  C: 2.0,
-  'C-': 1.7,
-  'D+': 1.0,
-  D: 1.0,
-  E: 0,
-};
+/** Fonction qui prend le crédit du cours selon le input
+ * et le sigle entrés par l'utilisateur
+ */
+export function getCredit(input: string): string {
+  const sigle = getItemFromList(input);
+  const credit = String(sigle[0].credit);
+  console.log(credit);
+  return credit;
+}
 
 /** create an array with number for additional credits and result */
 export function createArrayWithNumbers(length: number): number[] {

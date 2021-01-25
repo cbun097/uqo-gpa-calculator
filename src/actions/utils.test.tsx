@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+
 test('createArrayWithNumbers', () => {});
 
 test('calculateGradePoints', () => {});
