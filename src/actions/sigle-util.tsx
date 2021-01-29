@@ -37,7 +37,6 @@ export function getCredit(input: string): string {
   if (input != '') {
     const sigle = getItemFromList(input);
     credit = String(sigle[0].credit);
-    console.log('credit', credit);
   }
   return credit != null ? credit : '';
 }

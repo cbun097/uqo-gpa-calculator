@@ -28,7 +28,6 @@ export const SigleForm: React.FC<ISigleForm> = () => {
   };
   const submitCalcul = () => {
     const values: IFormInput = getValues();
-    console.log('formData', getValues());
     setForm(values);
     setBtnClicked(true);
     ReactGA.event({

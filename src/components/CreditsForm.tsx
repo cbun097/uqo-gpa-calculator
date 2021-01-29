@@ -24,7 +24,6 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
     const values: IFormInput = getValues();
     data = values;
     setForm(data);
-    console.log(data);
   };
   const submitCalcul = () => {
     const values: IFormInput = getValues();
