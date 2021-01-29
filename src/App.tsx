@@ -26,15 +26,15 @@ export default function App(): ReactElement {
         </Heading>
         <Tabs isFitted variant='enclosed'>
           <TabList>
+            <Tab>Par crédit</Tab>
             <Tab>Par sigle</Tab>
-            <Tab>Par credit</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
-              <SigleForm form={form} isFirstSemester={isFirstSemester} />
+              <CreditsForm form={form} isFirstSemester={isFirstSemester} />
             </TabPanel>
             <TabPanel>
-              <CreditsForm form={form} isFirstSemester={isFirstSemester} />
+              <SigleForm form={form} isFirstSemester={isFirstSemester} />
             </TabPanel>
           </TabPanels>
         </Tabs>

@@ -7,6 +7,7 @@ import { Results } from './Results';
 import { ModalTableGrade } from '../modal-table-grade';
 import { DeleteIcon } from '@chakra-ui/icons';
 import { IFormInput, initialValues } from '../types/types';
+import '../App.css';
 
 interface ICreditForm {
   isFirstSemester: boolean;
@@ -23,6 +24,7 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
     const values: IFormInput = getValues();
     data = values;
     setForm(data);
+    console.log(data);
   };
   const submitCalcul = () => {
     const values: IFormInput = getValues();
@@ -36,8 +38,9 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
   useEffect(() => {
     // console.log('touched', formState.touched);
   }, [formState]);
+
   return (
-    <Container>
+    <>
       <Box p={5}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormControl display='flex' alignItems='center'>
@@ -56,13 +59,23 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
             <div>
               <FormControl id='currentGPA'>
                 <FormLabel>Moyenne cumulative globale sur 4,30: </FormLabel>
-                <Input type='text' name='currentGPA' id='currentGPA' ref={register({ min: 0, max: 4.3 })} />
-                {errors.currentGPA && 'Votre GPA est invalide'}
+                <Input
+                  type='text'
+                  name='currentGPA'
+                  id='currentGPA'
+                  ref={register({ max: { value: 4.3, message: 'Votre GPA est invalide' } })}
+                />
+                {errors.currentGPA && <p className='error'>{errors.currentGPA.message}</p>}
               </FormControl>
               <FormControl id='currentCreditsEarned' marginTop='3'>
                 <FormLabel>Crédits réussis: </FormLabel>
-                <Input type='text' name='currentCreditsEarned' id='currentCreditsEarned' ref={register({ pattern: /^\d+$/ })} />
-                {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
+                <Input
+                  type='text'
+                  name='currentCreditsEarned'
+                  id='currentCreditsEarned'
+                  ref={register({ pattern: { value: /^\d+$/, message: 'Seul les chiffres sont acceptés' } })}
+                />
+                {errors.currentCreditsEarned && <p className='error'>{errors.currentCreditsEarned.message}</p>}
               </FormControl>
             </div>
           )}
@@ -73,8 +86,13 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
-              <Input type='text' name='creditsEarned1' id='creditsEarned1' ref={register({ required: true, pattern: /^\d+$/ })} />
-              {errors.currentCreditsEarned && 'Champs obligatoire: Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='creditsEarned1'
+                id='creditsEarned1'
+                ref={register({ required: 'Champs obligatoire', pattern: { value: /^\d+$/, message: 'Seul les chiffres sont acceptés' } })}
+              />
+              {errors.creditsEarned1 && <p className='error'>{errors.creditsEarned1.message}</p>}
             </FormControl>
 
             <FormControl id='credits-earned'>
@@ -83,61 +101,104 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
                 type='text'
                 name='resultEarned1'
                 id='resultEarned1'
-                ref={register({ required: true, pattern: /^([A-Ea-e+-]*$){2}/ })}
+                ref={register({
+                  required: 'Champs obligatoire',
+                  pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' },
+                })}
               />
-              {errors.currentCreditsEarned && 'Champs obligatoire: Seul les lettres de A à E sont acceptés'}
+              {errors.resultEarned1 && <p className='error'>{errors.resultEarned1.message}</p>}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
-              <Input type='text' name='creditsEarned2' id='creditsEarned2' ref={register({ pattern: /^\d+$/ })} />
-              {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='creditsEarned2'
+                id='creditsEarned2'
+                ref={register({ pattern: { value: /^\d+$/, message: 'Seul les chiffres sont acceptés' } })}
+              />
+              {errors.creditsEarned2 && <p className='error'>{errors.creditsEarned2.message}</p>}
             </FormControl>
 
             <FormControl id='credits-earned'>
               <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned2' id='resultEarned2' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
-              {errors.currentCreditsEarned && 'Seul les lettres de A à E sont acceptés'}
+              <Input
+                type='text'
+                name='resultEarned2'
+                id='resultEarned2'
+                ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
+              />
+              {errors.resultEarned2 && <p className='error'>{errors.resultEarned2.message}</p>}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
-              <Input type='text' name='creditsEarned3' id='creditsEarned3' ref={register({ pattern: /^\d+$/ })} />
-              {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='creditsEarned3'
+                id='creditsEarned3'
+                ref={register({ pattern: { value: /^\d+$/, message: 'Seul les chiffres sont acceptés' } })}
+              />
+              {errors.creditsEarned3 && <p className='error'>{errors.creditsEarned3.message}</p>}
             </FormControl>
 
             <FormControl id='credits-earned'>
               <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned3' id='resultEarned3' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
-              {errors.currentCreditsEarned && 'Seul les lettres de A à E sont acceptés'}
+              <Input
+                type='text'
+                name='resultEarned3'
+                id='resultEarned3'
+                ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
+              />
+              {errors.resultEarned3 && <p className='error'>{errors.resultEarned3.message}</p>}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
-              <Input type='text' name='creditsEarned4' id='creditsEarned4' ref={register({ pattern: /^\d+$/ })} />
-              {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='creditsEarned4'
+                id='creditsEarned4'
+                ref={register({ pattern: { value: /^\d+$/, message: 'Seul les chiffres sont acceptés' } })}
+              />
+              {errors.creditsEarned4 && <p className='error'>{errors.creditsEarned4.message}</p>}
             </FormControl>
 
             <FormControl id='credits-earned'>
               <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned4' id='resultEarned4' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
-              {errors.currentCreditsEarned && 'Seul les lettres de A à E sont acceptés'}
+              <Input
+                type='text'
+                name='resultEarned4'
+                id='resultEarned4'
+                ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
+              />
+              {errors.resultEarned4 && <p className='error'>{errors.resultEarned4.message}</p>}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Crédits: </FormLabel>
-              <Input type='text' name='creditsEarned5' id='creditsEarned5' ref={register({ pattern: /^\d+$/ })} />
-              {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='creditsEarned5'
+                id='creditsEarned5'
+                ref={register({ pattern: { value: /^\d+$/, message: 'Seul les chiffres sont acceptés' } })}
+              />
+              {errors.creditsEarned5 && <p className='error'>{errors.creditsEarned5.message}</p>}
             </FormControl>
 
             <FormControl id='credits-earned'>
               <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned5' id='resultEarned5' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
-              {errors.currentCreditsEarned && 'Seul les lettres de A à E sont acceptés'}
+              <Input
+                type='text'
+                name='resultEarned5'
+                id='resultEarned5'
+                ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
+              />
+              {errors.resultEarned5 && <p className='error'>{errors.resultEarned5.message}</p>}
             </FormControl>
           </HStack>
           {createArrayWithNumbers(size).map(index => {
@@ -149,10 +210,9 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
                     type='text'
                     name={`creditsEarnedArray[${index}]`}
                     id={`creditsEarnedArray[${index}]`}
-                    ref={register({ pattern: /^\d+$/ })}
+                    ref={register({ pattern: { value: /^\d+$/, message: 'Seul les chiffres sont acceptés' } })}
                   />
-                  {/* //TODO: update */}
-                  {errors.creditsEarnedArray && 'Seul les chiffres sont acceptés'}
+                  {errors.creditsEarnedArray && <p className='error'>{errors.creditsEarnedArray.map(e => e?.message)}</p>}
                 </FormControl>
 
                 <FormControl id='credits-earned'>
@@ -161,10 +221,9 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
                     type='text'
                     name={`resultEarnedArray[${index}]`}
                     id={`resultEarnedArray[${index}]`}
-                    ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })}
+                    ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
                   />
-                  {/* //TODO: update */}
-                  {errors.creditsEarnedArray && 'Seul les chiffres sont acceptés'}
+                  {errors.creditsEarnedArray && <p className='error'>{errors.creditsEarnedArray.map(e => e?.message)}</p>}
                 </FormControl>
                 {size >= 1 && (
                   <Box pt={[3, 6]}>
@@ -196,6 +255,6 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
           </Container>
         )}
       </Box>
-    </Container>
+    </>
   );
 };

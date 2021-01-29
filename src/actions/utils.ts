@@ -1,44 +1,5 @@
 //FIXME: typesafe some of the any type
-import { CoursUqoList } from '../assets/cours';
 import { IFormInput, notationList, pointsList } from '../types/types';
-
-/** Fonction qui prend le sigle du cours selon le input
- * entrés par l'utilisateur
- */
-//TODO: validation si le sigle entrée n'existe pas dans la liste
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function getItemFromList(input: string): any {
-  const element = CoursUqoList.filter(element => element.sigle === input);
-  return element;
-}
-
-/** Fonction qui prend le sigle du cours selon le input
- * et le sigle entrés par l'utilisateur
- */
-export function getSigle(input: string): string {
-  const element = getItemFromList(input);
-  const sigle = element[0].sigle;
-  return sigle != null ? sigle : '';
-}
-
-/** Fonction qui prend le titre du cours selon le input
- * et le sigle entrés par l'utilisateur
- */
-export function getTitre(input: string): string {
-  const element = getItemFromList(input);
-  const titre = element[0].titre;
-  return titre != null ? titre : '';
-}
-
-/** Fonction qui prend le crédit du cours selon le input
- * et le sigle entrés par l'utilisateur
- */
-export function getCredit(input: string): string {
-  const sigle = getItemFromList(input);
-  const credit = String(sigle[0].credit);
-  console.log(credit);
-  return credit;
-}
 
 /** create an array with number for additional credits and result */
 export function createArrayWithNumbers(length: number): number[] {
@@ -63,10 +24,10 @@ export function accumulatedCredits(formData: IFormInput): number {
   });
   return (
     Number(formData.creditsEarned1) +
-    Number(formData.creditsEarned2) +
-    Number(formData?.creditsEarned3 ? formData.creditsEarned3 : 0) +
-    Number(formData?.creditsEarned4 ? formData.creditsEarned4 : 0) +
-    Number(formData?.creditsEarned5 ? formData.creditsEarned5 : 0) +
+    Number(formData.creditsEarned2 ? Number(formData.creditsEarned2) : 0) +
+    Number(formData?.creditsEarned3 ? Number(formData.creditsEarned3) : 0) +
+    Number(formData?.creditsEarned4 ? Number(formData.creditsEarned4) : 0) +
+    Number(formData?.creditsEarned5 ? Number(formData.creditsEarned5) : 0) +
     sumArray
   );
 }
@@ -85,12 +46,14 @@ export function convertLetterToPoints(input: string): number {
  * Calculer les points accumulates selon le resultat obtenu
  */
 export function semesterGradePoints(formData: IFormInput): number {
+  console.log('convert', formData);
   let sum = 0;
   let totalPts = 0;
+  //TODO: refactor this part
   // eslint-disable-next-line
   const results: any[] = [
     formData.resultEarned1,
-    formData.resultEarned2,
+    formData.resultEarned2 ? formData.resultEarned2 : 0,
     formData?.resultEarned3 ? formData.resultEarned3 : 0,
     formData?.resultEarned4 ? formData.resultEarned4 : 0,
     formData?.resultEarned5 ? formData.resultEarned5 : 0,
@@ -99,7 +62,7 @@ export function semesterGradePoints(formData: IFormInput): number {
   // eslint-disable-next-line
   const credits: any[] = [
     formData.creditsEarned1,
-    formData.creditsEarned2,
+    formData.creditsEarned2 ? formData.creditsEarned2 : 0,
     formData?.creditsEarned3 ? formData.creditsEarned3 : 0,
     formData?.creditsEarned4 ? formData.creditsEarned4 : 0,
     formData?.creditsEarned5 ? formData.creditsEarned5 : 0,

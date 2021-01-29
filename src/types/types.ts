@@ -1,6 +1,11 @@
 export interface IFormInput {
   currentGPA: number;
   currentCreditsEarned: number;
+  sigle1?: string;
+  sigle2?: string;
+  sigle3?: string;
+  sigle4?: string;
+  sigle5?: string;
   creditsEarned1: number;
   creditsEarned2: number;
   creditsEarned3?: number;
@@ -13,6 +18,7 @@ export interface IFormInput {
   resultEarned5?: string;
   creditsEarnedArray?: number[];
   resultEarnedArray?: string[];
+  sigleArray?: string[];
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -28,6 +34,7 @@ export const initialValues: IFormInput = {
   creditsEarned2: 0,
   creditsEarned3: 0,
   creditsEarned4: 0,
+  sigle1: '',
   resultEarned1: '',
   resultEarned2: '',
   resultEarned3: '',

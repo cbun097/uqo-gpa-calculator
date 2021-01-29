@@ -1,19 +1,21 @@
 import { Container, FormControl, FormLabel, Switch, Input, HStack, Stack, Button, Text, IconButton, Box } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { createArrayWithNumbers, getCredit } from '../actions/utils';
+import { createArrayWithNumbers } from '../actions/utils';
 import ReactGA from 'react-ga';
 import { Results } from './Results';
 import { ModalTableGrade } from '../modal-table-grade';
 import { DeleteIcon } from '@chakra-ui/icons';
 import { IFormInput, initialValues } from '../types/types';
+import { getCredit, getCreditArray } from '../actions/sigle-util';
+import '../App.css';
 
-interface ICreditForm {
+interface ISigleForm {
   isFirstSemester: boolean;
   form: IFormInput;
 }
 
-export const SigleForm: React.FC<ICreditForm> = () => {
+export const SigleForm: React.FC<ISigleForm> = () => {
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const [isFirstSemester, setIsFirstSemester] = useState(false);
@@ -26,7 +28,7 @@ export const SigleForm: React.FC<ICreditForm> = () => {
   };
   const submitCalcul = () => {
     const values: IFormInput = getValues();
-    console.log('formData', values);
+    console.log('formData', getValues());
     setForm(values);
     setBtnClicked(true);
     ReactGA.event({
@@ -34,11 +36,12 @@ export const SigleForm: React.FC<ICreditForm> = () => {
       action: 'Calculate GPA par sigle',
     });
   };
+
   useEffect(() => {
     // console.log('touched', formState.touched);
-  }, [formState]);
+  }, [formState, form]);
   return (
-    <Container>
+    <>
       <Box p={5}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormControl display='flex' alignItems='center'>
@@ -57,13 +60,28 @@ export const SigleForm: React.FC<ICreditForm> = () => {
             <div>
               <FormControl id='currentGPA'>
                 <FormLabel>Moyenne cumulative globale sur 4,30: </FormLabel>
-                <Input type='text' name='currentGPA' id='currentGPA' ref={register({ min: 0, max: 4.3 })} />
-                {errors.currentGPA && 'Votre GPA est invalide'}
+                <Input
+                  type='text'
+                  name='currentGPA'
+                  id='currentGPA'
+                  ref={register({ max: { value: 4.3, message: 'Votre GPA est invalide' } })}
+                />
+                {errors.currentGPA && <p className='error'>{errors.currentGPA.message}</p>}
               </FormControl>
               <FormControl id='currentCreditsEarned' marginTop='3'>
                 <FormLabel>Crédits réussis: </FormLabel>
-                <Input type='text' name='currentCreditsEarned' id='currentCreditsEarned' ref={register({ pattern: /^.+$/ })} />
-                {errors.currentCreditsEarned && 'Seul les chiffres sont acceptés'}
+                <Input
+                  type='text'
+                  name='currentCreditsEarned'
+                  id='currentCreditsEarned'
+                  ref={register({
+                    pattern: {
+                      value: /^\d+$/,
+                      message: 'Invalide: seul les chiffres sont acceptés',
+                    },
+                  })}
+                />
+                {errors.currentCreditsEarned && <p className='error'>{errors.currentCreditsEarned.message}</p>}
               </FormControl>
             </div>
           )}
@@ -74,13 +92,25 @@ export const SigleForm: React.FC<ICreditForm> = () => {
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Sigle: </FormLabel>
-              <Input type='text' name='creditsEarned1' id='creditsEarned1' ref={register({ required: true, pattern: /^.+$/ })} />
-              {errors.creditsEarnedArray && 'Champs obligatoire: Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='sigle1'
+                id='sigle1'
+                ref={register({
+                  required: 'Champs obligatoire',
+                  pattern: {
+                    value: /^([A-Z0-9]*$)/,
+                    message: 'Le signe invalide',
+                  },
+                })}
+                placeholder='exemple: INF4083'
+              />
+              {errors.sigle1 && <p className='error'>{errors.sigle1.message}</p>}
             </FormControl>
-            {btnClicked && (
+            {btnClicked && formState.isValid && (
               <FormControl id='credit-pulled'>
-                <FormLabel>Credit:</FormLabel>
-                <Input value={getCredit(String(form.creditsEarned1))} isReadOnly />
+                <FormLabel>Crédits:</FormLabel>
+                <Input name='creditsEarned1' id='creditsEarned1' value={getCredit(String(form.sigle1))} ref={register} isReadOnly />
               </FormControl>
             )}
             <FormControl id='result-earned'>
@@ -89,7 +119,7 @@ export const SigleForm: React.FC<ICreditForm> = () => {
                 type='text'
                 name='resultEarned1'
                 id='resultEarned1'
-                ref={register({ required: true, pattern: /^([A-Ea-e+-]*$){2}/ })}
+                ref={register({ required: 'Champs obligatoire', pattern: /^([A-Ea-e+-]*$){2}/ })}
               />
               {errors.resultEarnedArray && 'Champs obligatoire: Seul les lettres de A à E sont acceptés'}
             </FormControl>
@@ -97,13 +127,24 @@ export const SigleForm: React.FC<ICreditForm> = () => {
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Sigle: </FormLabel>
-              <Input type='text' name='creditsEarned2' id='creditsEarned2' ref={register({ pattern: /^.+$/ })} />
-              {errors.creditsEarnedArray && 'Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='sigle2'
+                id='sigle2'
+                ref={register({
+                  pattern: {
+                    value: /^([A-Z0-9]*$)/,
+                    message: 'Le signe invalide',
+                  },
+                })}
+                placeholder='exemple: INF4083'
+              />
+              {errors.sigle2 && <p className='error'>{errors.sigle2.message}</p>}
             </FormControl>
-            {btnClicked && (
+            {btnClicked && formState.isValid && (
               <FormControl id='credit-pulled'>
-                <FormLabel>Credit:</FormLabel>
-                <Input value={getCredit(String(form.creditsEarned2))} isReadOnly />
+                <FormLabel>Crédits:</FormLabel>
+                <Input name='creditsEarned2' id='creditsEarned2' value={getCredit(String(form.sigle2))} ref={register} isReadOnly />
               </FormControl>
             )}
             <FormControl id='result-earned'>
@@ -115,13 +156,24 @@ export const SigleForm: React.FC<ICreditForm> = () => {
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Sigle: </FormLabel>
-              <Input type='text' name='creditsEarned3' id='creditsEarned3' ref={register({ pattern: /^.+$/ })} />
-              {errors.creditsEarnedArray && 'Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='sigle3'
+                id='sigle3'
+                ref={register({
+                  pattern: {
+                    value: /^([A-Z0-9]*$)/,
+                    message: 'Le signe invalide',
+                  },
+                })}
+                placeholder='exemple: INF4083'
+              />
+              {errors.sigle3 && <p className='error'>{errors.sigle3.message}</p>}
             </FormControl>
-            {btnClicked && (
+            {btnClicked && formState.isValid && (
               <FormControl id='credit-pulled'>
-                <FormLabel>Credit:</FormLabel>
-                <Input value={getCredit(String(form.creditsEarned3))} isReadOnly />
+                <FormLabel>Crédits:</FormLabel>
+                <Input name='creditsEarned3' id='creditsEarned3' value={getCredit(String(form.sigle3))} ref={register} isReadOnly />
               </FormControl>
             )}
             <FormControl id='result-earned'>
@@ -133,13 +185,24 @@ export const SigleForm: React.FC<ICreditForm> = () => {
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Sigle: </FormLabel>
-              <Input type='text' name='creditsEarned4' id='creditsEarned4' ref={register({ pattern: /^.+$/ })} />
-              {errors.creditsEarnedArray && 'Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='sigle4'
+                id='sigle4'
+                ref={register({
+                  pattern: {
+                    value: /^([A-Z0-9]*$)/,
+                    message: 'Le signe invalide',
+                  },
+                })}
+                placeholder='exemple: INF4083'
+              />
+              {errors.sigle4 && <p className='error'>{errors.sigle4.message}</p>}
             </FormControl>
-            {btnClicked && (
+            {btnClicked && formState.isValid && (
               <FormControl id='credit-pulled'>
-                <FormLabel>Credit:</FormLabel>
-                <Input value={getCredit(String(form.creditsEarned4))} isReadOnly />
+                <FormLabel>Crédits:</FormLabel>
+                <Input name='creditsEarned4' id='creditsEarned4' value={getCredit(String(form.sigle4))} ref={register} isReadOnly />
               </FormControl>
             )}
             <FormControl id='result-earned'>
@@ -151,13 +214,24 @@ export const SigleForm: React.FC<ICreditForm> = () => {
           <HStack spacing='24px' marginTop='3'>
             <FormControl id='credits-earned'>
               <FormLabel>Sigle: </FormLabel>
-              <Input type='text' name='creditsEarned5' id='creditsEarned5' ref={register({ pattern: /^.+$/ })} />
-              {errors.creditsEarnedArray && 'Seul les chiffres sont acceptés'}
+              <Input
+                type='text'
+                name='sigle5'
+                id='sigle5'
+                ref={register({
+                  pattern: {
+                    value: /^([A-Z0-9]*$)/,
+                    message: 'Le signe invalide',
+                  },
+                })}
+                placeholder='exemple: INF4083'
+              />
+              {errors.sigle5 && <p className='error'>{errors.sigle5.message}</p>}
             </FormControl>
-            {btnClicked && (
+            {btnClicked && formState.isValid && (
               <FormControl id='credit-pulled'>
-                <FormLabel>Credit:</FormLabel>
-                <Input value={getCredit(String(form.creditsEarned5))} isReadOnly />
+                <FormLabel>Crédits:</FormLabel>
+                <Input name='creditsEarned5' id='creditsEarned5' value={getCredit(String(form.sigle5))} ref={register} isReadOnly />
               </FormControl>
             )}
             <FormControl id='result-earned'>
@@ -173,16 +247,29 @@ export const SigleForm: React.FC<ICreditForm> = () => {
                   <FormLabel>Sigle: </FormLabel>
                   <Input
                     type='text'
-                    name={`creditsEarnedArray[${index}]`}
-                    id={`creditsEarnedArray[${index}]`}
-                    ref={register({ pattern: /^.+$/ })}
+                    name={`sigleArray[${index}]`}
+                    id={`sigleArray[${index}]`}
+                    ref={register({
+                      required: 'Champs obligatoire',
+                      pattern: {
+                        value: /^([A-Z0-9]*$)/,
+                        message: 'Le signe invalide',
+                      },
+                    })}
+                    placeholder='exemple: INF4083'
                   />
-                  {errors.creditsEarnedArray && 'Seul les chiffres sont acceptés'}
+                  {errors.sigleArray && <p className='error'>{errors.sigleArray.map(e => e?.message)}</p>}
                 </FormControl>
-                {btnClicked && (
+                {btnClicked && formState.isValid && (
                   <FormControl id='credit-pulled'>
-                    <FormLabel>Credit:</FormLabel>
-                    <Input value={getCredit(String(form.creditsEarnedArray))} isReadOnly />
+                    <FormLabel>Crédits:</FormLabel>
+                    <Input
+                      name={`creditsEarnedArray[${index}]`}
+                      id={`creditsEarnedArray[${index}]`}
+                      value={getCreditArray(form.sigleArray ? form.sigleArray : [])}
+                      ref={register}
+                      isReadOnly
+                    />
                   </FormControl>
                 )}
                 <FormControl id='result-earned'>
@@ -225,6 +312,6 @@ export const SigleForm: React.FC<ICreditForm> = () => {
           </Container>
         )}
       </Box>
-    </Container>
+    </>
   );
 };
