@@ -19,7 +19,7 @@ export const SigleForm: React.FC<ISigleForm> = () => {
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const [isFirstSemester, setIsFirstSemester] = useState(false);
-  const { register, handleSubmit, getValues, errors, formState } = useForm<IFormInput>();
+  const { register, handleSubmit, getValues, errors, clearErrors, formState } = useForm<IFormInput>();
   const [size, setSize] = useState(0);
   const onSubmit = async (data: IFormInput) => {
     const values: IFormInput = getValues();
@@ -42,6 +42,9 @@ export const SigleForm: React.FC<ISigleForm> = () => {
   return (
     <>
       <Box p={5}>
+        <Text color='gray.500' fontSize='sm'>
+          Afin d&#39;obtenir une moyenne approximatif, entrez le sigle du cours qui se retrouve dans votre horaire de cours.
+        </Text>
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormControl display='flex' alignItems='center'>
             <FormLabel htmlFor='firstSemester' mb='0'>
@@ -58,7 +61,7 @@ export const SigleForm: React.FC<ISigleForm> = () => {
           {!isFirstSemester && (
             <div>
               <FormControl id='currentGPA'>
-                <FormLabel>Moyenne cumulative globale sur 4,30: </FormLabel>
+                <FormLabel htmlFor='currentGPA'>Moyenne cumulative globale sur 4,30: </FormLabel>
                 <Input
                   type='text'
                   name='currentGPA'
@@ -68,7 +71,7 @@ export const SigleForm: React.FC<ISigleForm> = () => {
                 {errors.currentGPA && <p className='error'>{errors.currentGPA.message}</p>}
               </FormControl>
               <FormControl id='currentCreditsEarned' marginTop='3'>
-                <FormLabel>Crédits réussis: </FormLabel>
+                <FormLabel htmlFor='currentCreditsEarned'>Crédits réussis: </FormLabel>
                 <Input
                   type='text'
                   name='currentCreditsEarned'
@@ -86,11 +89,11 @@ export const SigleForm: React.FC<ISigleForm> = () => {
           )}
           <Container m={1}>
             <Text>Ce semestre</Text>
-            <Text>Les cours pris cette session ou les cours prévus</Text>
+            <Text>Les cours pris cette session ou les cours prévus.</Text>
           </Container>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Sigle: </FormLabel>
+            <FormControl id='sigle1'>
+              <FormLabel htmlFor='sigle1'>Sigle: </FormLabel>
               <Input
                 type='text'
                 name='sigle1'
@@ -98,7 +101,7 @@ export const SigleForm: React.FC<ISigleForm> = () => {
                 ref={register({
                   required: 'Champs obligatoire',
                   pattern: {
-                    value: /^([A-Z0-9]*$)/,
+                    value: /^([A-Z0-9]*$){4,5}/,
                     message: 'Le signe invalide',
                   },
                 })}
@@ -107,25 +110,28 @@ export const SigleForm: React.FC<ISigleForm> = () => {
               {errors.sigle1 && <p className='error'>{errors.sigle1.message}</p>}
             </FormControl>
             {btnClicked && formState.isValid && (
-              <FormControl id='credit-pulled'>
-                <FormLabel>Crédits:</FormLabel>
+              <FormControl id='creditsEarned1'>
+                <FormLabel htmlFor='creditsEarned1'>Crédits:</FormLabel>
                 <Input name='creditsEarned1' id='creditsEarned1' value={getCredit(String(form.sigle1))} ref={register} isReadOnly />
               </FormControl>
             )}
-            <FormControl id='result-earned'>
-              <FormLabel>Résultat: </FormLabel>
+            <FormControl id='resultEarned1'>
+              <FormLabel htmlFor='resultEarned1'>Résultat: </FormLabel>
               <Input
                 type='text'
                 name='resultEarned1'
                 id='resultEarned1'
-                ref={register({ required: 'Champs obligatoire', pattern: /^([A-Ea-e+-]*$){2}/ })}
+                ref={register({
+                  required: 'Champs obligatoire',
+                  pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' },
+                })}
               />
-              {errors.resultEarnedArray && 'Champs obligatoire: Seul les lettres de A à E sont acceptés'}
+              {errors.resultEarned1 && <p className='error'>{errors.resultEarned1?.message}</p>}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Sigle: </FormLabel>
+            <FormControl id='sigle2'>
+              <FormLabel htmlFor='sigle2'>Sigle: </FormLabel>
               <Input
                 type='text'
                 name='sigle2'
@@ -141,20 +147,25 @@ export const SigleForm: React.FC<ISigleForm> = () => {
               {errors.sigle2 && <p className='error'>{errors.sigle2.message}</p>}
             </FormControl>
             {btnClicked && formState.isValid && (
-              <FormControl id='credit-pulled'>
-                <FormLabel>Crédits:</FormLabel>
+              <FormControl id='creditsEarned2'>
+                <FormLabel html='creditsEarned2'>Crédits:</FormLabel>
                 <Input name='creditsEarned2' id='creditsEarned2' value={getCredit(String(form.sigle2))} ref={register} isReadOnly />
               </FormControl>
             )}
-            <FormControl id='result-earned'>
-              <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned2' id='resultEarned2' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
-              {errors.resultEarnedArray && 'Seul les lettres de A à E sont acceptés'}
+            <FormControl id='resultEarned2'>
+              <FormLabel htmlFor='resultEarned2'>Résultat: </FormLabel>
+              <Input
+                type='text'
+                name='resultEarned2'
+                id='resultEarned2'
+                ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
+              />
+              {errors.resultEarned2 && <p className='error'>{errors.resultEarned2?.message}</p>}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Sigle: </FormLabel>
+            <FormControl id='sigle3'>
+              <FormLabel htmlFor='sigle3'>Sigle: </FormLabel>
               <Input
                 type='text'
                 name='sigle3'
@@ -170,20 +181,25 @@ export const SigleForm: React.FC<ISigleForm> = () => {
               {errors.sigle3 && <p className='error'>{errors.sigle3.message}</p>}
             </FormControl>
             {btnClicked && formState.isValid && (
-              <FormControl id='credit-pulled'>
-                <FormLabel>Crédits:</FormLabel>
+              <FormControl id='creditsEarned3'>
+                <FormLabel htmlFor='creditsEarned3'>Crédits:</FormLabel>
                 <Input name='creditsEarned3' id='creditsEarned3' value={getCredit(String(form.sigle3))} ref={register} isReadOnly />
               </FormControl>
             )}
-            <FormControl id='result-earned'>
-              <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned3' id='resultEarned3' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
-              {errors.resultEarnedArray && 'Seul les lettres de A à E sont acceptés'}
+            <FormControl id='resultEarned3'>
+              <FormLabel htmlFor='resultEarned3'>Résultat: </FormLabel>
+              <Input
+                type='text'
+                name='resultEarned3'
+                id='resultEarned3'
+                ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
+              />
+              {errors.resultEarned3 && <p className='error'>{errors.resultEarned3?.message}</p>}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Sigle: </FormLabel>
+            <FormControl id='sigle4'>
+              <FormLabel htmlFor='sigle4'>Sigle: </FormLabel>
               <Input
                 type='text'
                 name='sigle4'
@@ -199,20 +215,25 @@ export const SigleForm: React.FC<ISigleForm> = () => {
               {errors.sigle4 && <p className='error'>{errors.sigle4.message}</p>}
             </FormControl>
             {btnClicked && formState.isValid && (
-              <FormControl id='credit-pulled'>
-                <FormLabel>Crédits:</FormLabel>
+              <FormControl id='creditsEarned4'>
+                <FormLabel htmlFor='creditsEarned4'>Crédits:</FormLabel>
                 <Input name='creditsEarned4' id='creditsEarned4' value={getCredit(String(form.sigle4))} ref={register} isReadOnly />
               </FormControl>
             )}
-            <FormControl id='result-earned'>
-              <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned4' id='resultEarned4' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
-              {errors.resultEarnedArray && 'Seul les lettres de A à E sont acceptés'}
+            <FormControl id='resultEarned4'>
+              <FormLabel htmlFor='resultEarned4'>Résultat: </FormLabel>
+              <Input
+                type='text'
+                name='resultEarned4'
+                id='resultEarned4'
+                ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
+              />
+              {errors.resultEarned4 && <p className='error'>{errors.resultEarned4?.message}</p>}
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Sigle: </FormLabel>
+            <FormControl id='sigle5'>
+              <FormLabel htmlFor='sigle5'>Sigle: </FormLabel>
               <Input
                 type='text'
                 name='sigle5'
@@ -228,28 +249,32 @@ export const SigleForm: React.FC<ISigleForm> = () => {
               {errors.sigle5 && <p className='error'>{errors.sigle5.message}</p>}
             </FormControl>
             {btnClicked && formState.isValid && (
-              <FormControl id='credit-pulled'>
-                <FormLabel>Crédits:</FormLabel>
+              <FormControl id='creditsEarned5'>
+                <FormLabel htmlFor='creditsEarned5'>Crédits:</FormLabel>
                 <Input name='creditsEarned5' id='creditsEarned5' value={getCredit(String(form.sigle5))} ref={register} isReadOnly />
               </FormControl>
             )}
-            <FormControl id='result-earned'>
-              <FormLabel>Résultat: </FormLabel>
-              <Input type='text' name='resultEarned5' id='resultEarned5' ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })} />
-              {errors.resultEarnedArray && 'Seul les lettres de A à E sont acceptés'}
+            <FormControl id='resultEarned5'>
+              <FormLabel htmlFor='resultEarned5'>Résultat: </FormLabel>
+              <Input
+                type='text'
+                name='resultEarned5'
+                id='resultEarned5'
+                ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
+              />
+              {errors.resultEarned5 && <p className='error'>{errors.resultEarned5?.message}</p>}
             </FormControl>
           </HStack>
           {createArrayWithNumbers(size).map(index => {
             return (
               <HStack spacing='24px' marginTop='3' key={index} align='center'>
-                <FormControl id='credits-earned'>
-                  <FormLabel>Sigle: </FormLabel>
+                <FormControl id={`sigleArray[${index}]`}>
+                  <FormLabel htmlFor={`sigleArray[${index}]`}>Sigle: </FormLabel>
                   <Input
                     type='text'
                     name={`sigleArray[${index}]`}
                     id={`sigleArray[${index}]`}
                     ref={register({
-                      required: 'Champs obligatoire',
                       pattern: {
                         value: /^([A-Z0-9]*$)/,
                         message: 'Le signe invalide',
@@ -260,8 +285,8 @@ export const SigleForm: React.FC<ISigleForm> = () => {
                   {errors.sigleArray && <p className='error'>{errors.sigleArray.map(e => e?.message)}</p>}
                 </FormControl>
                 {btnClicked && formState.isValid && (
-                  <FormControl id='credit-pulled'>
-                    <FormLabel>Crédits:</FormLabel>
+                  <FormControl id={`creditsEarnedArray[${index}]`}>
+                    <FormLabel htmlFor={`creditsEarnedArray[${index}]`}>Crédits:</FormLabel>
                     <Input
                       name={`creditsEarnedArray[${index}]`}
                       id={`creditsEarnedArray[${index}]`}
@@ -271,15 +296,15 @@ export const SigleForm: React.FC<ISigleForm> = () => {
                     />
                   </FormControl>
                 )}
-                <FormControl id='result-earned'>
-                  <FormLabel>Résultat: </FormLabel>
+                <FormControl id={`resultEarnedArray[${index}]`}>
+                  <FormLabel htmlFor={`resultEarnedArray[${index}]`}>Résultat: </FormLabel>
                   <Input
                     type='text'
                     name={`resultEarnedArray[${index}]`}
                     id={`resultEarnedArray[${index}]`}
-                    ref={register({ pattern: /^([A-Ea-e+-]*$){2}/ })}
+                    ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
                   />
-                  {errors.resultEarnedArray && 'Seul les lettres de A à E sont acceptés'}
+                  {errors.resultEarnedArray && <p className='error'>{errors.resultEarnedArray.map(e => e?.message)}</p>}
                 </FormControl>
                 {size >= 1 && (
                   <Box pt={[3, 6]}>
@@ -293,7 +318,12 @@ export const SigleForm: React.FC<ISigleForm> = () => {
             <Button type='submit' onClick={() => submitCalcul()}>
               Calculer
             </Button>
-            <Button type='reset' onClick={() => setBtnClicked(false)}>
+            <Button
+              type='reset'
+              onClick={() => {
+                setBtnClicked(false), clearErrors();
+              }}
+            >
               Réinitialiser
             </Button>
             <Button type='button' onClick={() => setSize(size + 1)}>

@@ -18,7 +18,7 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const [isFirstSemester, setIsFirstSemester] = useState(false);
-  const { register, handleSubmit, getValues, errors, formState } = useForm<IFormInput>();
+  const { register, handleSubmit, getValues, errors, clearErrors, formState } = useForm<IFormInput>();
   const [size, setSize] = useState(0);
   const onSubmit = async (data: IFormInput) => {
     const values: IFormInput = getValues();
@@ -41,6 +41,9 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
   return (
     <>
       <Box p={5}>
+        <Text fontSize='sm' color='gray.500'>
+          Afin d&#39;obtenir une moyenne approximatif, veuillez consulter votre relevés de notes.
+        </Text>
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormControl display='flex' alignItems='center'>
             <FormLabel htmlFor='firstSemester' mb='0'>
@@ -57,7 +60,7 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
           {!isFirstSemester && (
             <div>
               <FormControl id='currentGPA'>
-                <FormLabel>Moyenne cumulative globale sur 4,30: </FormLabel>
+                <FormLabel htmlFor='currentGPA'>Moyenne cumulative globale sur 4,30: </FormLabel>
                 <Input
                   type='text'
                   name='currentGPA'
@@ -80,11 +83,11 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
           )}
           <Container m={1}>
             <Text>Ce semestre</Text>
-            <Text>Les cours pris cette session ou les cours prévus</Text>
+            <Text>Les cours pris cette session ou les cours prévus.</Text>
           </Container>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Crédits: </FormLabel>
+            <FormControl id='creditsEarned1'>
+              <FormLabel htmlFor='creditsEarned1'>Crédits: </FormLabel>
               <Input
                 type='text'
                 name='creditsEarned1'
@@ -94,8 +97,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
               {errors.creditsEarned1 && <p className='error'>{errors.creditsEarned1.message}</p>}
             </FormControl>
 
-            <FormControl id='credits-earned'>
-              <FormLabel>Résultat: </FormLabel>
+            <FormControl id='resultEarned1'>
+              <FormLabel htmlFor='resultEarned1'>Résultat: </FormLabel>
               <Input
                 type='text'
                 name='resultEarned1'
@@ -109,8 +112,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Crédits: </FormLabel>
+            <FormControl id='creditsEarned2'>
+              <FormLabel htmlFor='creditsEarned2'>Crédits: </FormLabel>
               <Input
                 type='text'
                 name='creditsEarned2'
@@ -120,8 +123,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
               {errors.creditsEarned2 && <p className='error'>{errors.creditsEarned2.message}</p>}
             </FormControl>
 
-            <FormControl id='credits-earned'>
-              <FormLabel>Résultat: </FormLabel>
+            <FormControl id='resultEarned2'>
+              <FormLabel htmlFor='resultEarned2'>Résultat: </FormLabel>
               <Input
                 type='text'
                 name='resultEarned2'
@@ -132,8 +135,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Crédits: </FormLabel>
+            <FormControl id='creditsEarned3'>
+              <FormLabel htmlFor='creditsEarned3'>Crédits: </FormLabel>
               <Input
                 type='text'
                 name='creditsEarned3'
@@ -143,8 +146,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
               {errors.creditsEarned3 && <p className='error'>{errors.creditsEarned3.message}</p>}
             </FormControl>
 
-            <FormControl id='credits-earned'>
-              <FormLabel>Résultat: </FormLabel>
+            <FormControl id='resultEarned3'>
+              <FormLabel htmlFor='resultEarned3'>Résultat: </FormLabel>
               <Input
                 type='text'
                 name='resultEarned3'
@@ -155,8 +158,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Crédits: </FormLabel>
+            <FormControl id='creditsEarned4'>
+              <FormLabel htmlFor='creditsEarned4'>Crédits: </FormLabel>
               <Input
                 type='text'
                 name='creditsEarned4'
@@ -166,8 +169,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
               {errors.creditsEarned4 && <p className='error'>{errors.creditsEarned4.message}</p>}
             </FormControl>
 
-            <FormControl id='credits-earned'>
-              <FormLabel>Résultat: </FormLabel>
+            <FormControl id='resultEarned4'>
+              <FormLabel htmlFor='resultEarned4'>Résultat: </FormLabel>
               <Input
                 type='text'
                 name='resultEarned4'
@@ -178,8 +181,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
             </FormControl>
           </HStack>
           <HStack spacing='24px' marginTop='3'>
-            <FormControl id='credits-earned'>
-              <FormLabel>Crédits: </FormLabel>
+            <FormControl id='creditsEarned5'>
+              <FormLabel fpr='creditsEarned5'>Crédits: </FormLabel>
               <Input
                 type='text'
                 name='creditsEarned5'
@@ -189,8 +192,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
               {errors.creditsEarned5 && <p className='error'>{errors.creditsEarned5.message}</p>}
             </FormControl>
 
-            <FormControl id='credits-earned'>
-              <FormLabel>Résultat: </FormLabel>
+            <FormControl id='resultEarned5'>
+              <FormLabel htmlFor='resultEarned5'>Résultat: </FormLabel>
               <Input
                 type='text'
                 name='resultEarned5'
@@ -203,8 +206,8 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
           {createArrayWithNumbers(size).map(index => {
             return (
               <HStack spacing='24px' marginTop='3' key={index} align='center'>
-                <FormControl id='credits-earned'>
-                  <FormLabel>Crédits: </FormLabel>
+                <FormControl id={`creditsEarnedArray[${index}]`}>
+                  <FormLabel htmlFor={`creditsEarnedArray[${index}]`}>Crédits: </FormLabel>
                   <Input
                     type='text'
                     name={`creditsEarnedArray[${index}]`}
@@ -214,15 +217,15 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
                   {errors.creditsEarnedArray && <p className='error'>{errors.creditsEarnedArray.map(e => e?.message)}</p>}
                 </FormControl>
 
-                <FormControl id='credits-earned'>
-                  <FormLabel>Résultat: </FormLabel>
+                <FormControl id={`resultEarnedArray[${index}]`}>
+                  <FormLabel htmlFor={`resultEarnedArray[${index}]`}>Résultat: </FormLabel>
                   <Input
                     type='text'
                     name={`resultEarnedArray[${index}]`}
                     id={`resultEarnedArray[${index}]`}
                     ref={register({ pattern: { value: /^([A-Ea-e+-]*$){2}/, message: 'Seul les lettres de A à E sont acceptés' } })}
                   />
-                  {errors.creditsEarnedArray && <p className='error'>{errors.creditsEarnedArray.map(e => e?.message)}</p>}
+                  {errors.resultEarnedArray && <p className='error'>{errors.resultEarnedArray.map(e => e?.message)}</p>}
                 </FormControl>
                 {size >= 1 && (
                   <Box pt={[3, 6]}>
@@ -233,13 +236,19 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
             );
           })}
           <Stack direction={['column', 'row']} spacing={4} p={5} justify='center'>
-            <Button type='submit' onClick={() => submitCalcul()}>
+            <Button type='submit' id='btn-credit-calcul' onClick={() => submitCalcul()}>
               Calculer
             </Button>
-            <Button type='reset' onClick={() => setBtnClicked(false)}>
+            <Button
+              type='reset'
+              id='btn-credit-reset'
+              onClick={() => {
+                setBtnClicked(false), clearErrors();
+              }}
+            >
               Réinitialiser
             </Button>
-            <Button type='button' onClick={() => setSize(size + 1)}>
+            <Button type='button' onClick={() => setSize(size + 1)} id='btn-credit-rangee'>
               Ajouter une rangée
             </Button>
           </Stack>

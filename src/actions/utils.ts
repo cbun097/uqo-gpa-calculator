@@ -46,7 +46,6 @@ export function convertLetterToPoints(input: string): number {
  * Calculer les points accumulates selon le resultat obtenu
  */
 export function semesterGradePoints(formData: IFormInput): number {
-  console.log('convert', formData);
   let sum = 0;
   let totalPts = 0;
   //TODO: refactor this part
