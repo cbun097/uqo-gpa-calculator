@@ -18,17 +18,13 @@ export function calculateGradePoints(credits: number, currentGPA: number): numbe
  * Fonction qui permet de calculer les credits accumuler pour le semestre
  */
 export function accumulatedCredits(formData: IFormInput): number {
-  let sumArray = 0;
-  formData.creditsEarnedArray?.map(element => {
-    sumArray += Number(element);
-  });
   return (
     Number(formData.creditsEarned1) +
     Number(formData.creditsEarned2 ? Number(formData.creditsEarned2) : 0) +
     Number(formData?.creditsEarned3 ? Number(formData.creditsEarned3) : 0) +
     Number(formData?.creditsEarned4 ? Number(formData.creditsEarned4) : 0) +
     Number(formData?.creditsEarned5 ? Number(formData.creditsEarned5) : 0) +
-    sumArray
+    Number(formData?.creditsEarnedArray ? Number(formData.creditsEarnedArray) : 0)
   );
 }
 
@@ -56,7 +52,7 @@ export function semesterGradePoints(formData: IFormInput): number {
     formData?.resultEarned3 ? formData.resultEarned3 : 0,
     formData?.resultEarned4 ? formData.resultEarned4 : 0,
     formData?.resultEarned5 ? formData.resultEarned5 : 0,
-    formData?.resultEarnedArray,
+    formData?.resultEarnedArray ? formData.resultEarnedArray : 0,
   ];
   // eslint-disable-next-line
   const credits: any[] = [
@@ -65,7 +61,7 @@ export function semesterGradePoints(formData: IFormInput): number {
     formData?.creditsEarned3 ? formData.creditsEarned3 : 0,
     formData?.creditsEarned4 ? formData.creditsEarned4 : 0,
     formData?.creditsEarned5 ? formData.creditsEarned5 : 0,
-    formData?.creditsEarnedArray,
+    formData?.creditsEarnedArray ? formData.creditsEarnedArray : 0,
   ];
   // eslint-disable-next-line
   let convert: any;

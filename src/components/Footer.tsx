@@ -21,10 +21,11 @@ export const Footer: React.FC = () => (
       </Link>
     </Text>
     <Text>
-      © 2020 made by&nbsp;
+      © 2020 fait par&nbsp;
       <Link color='#2C5282' isExternal href='https://www.cbuns.ca/'>
         Claire
       </Link>
+      &nbsp;-&nbsp;étudiante
     </Text>
   </Container>
 );

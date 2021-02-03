@@ -18,9 +18,10 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const [isFirstSemester, setIsFirstSemester] = useState(false);
-  const { register, handleSubmit, getValues, errors, clearErrors, formState } = useForm<IFormInput>();
+  const { register, handleSubmit, getValues, errors, clearErrors, formState } = useForm<IFormInput>({ mode: 'onChange' });
   const [size, setSize] = useState(0);
   const onSubmit = async (data: IFormInput) => {
+    //TODO: handle error
     const values: IFormInput = getValues();
     data = values;
     setForm(data);
@@ -41,7 +42,7 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
   return (
     <>
       <Box p={5}>
-        <Text fontSize='sm' color='gray.500'>
+        <Text fontSize='sm' color='gray.500' pb={3}>
           Afin d&#39;obtenir une moyenne approximatif, veuillez consulter votre relevés de notes.
         </Text>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -236,7 +237,7 @@ export const CreditsForm: React.FC<ICreditForm> = () => {
             );
           })}
           <Stack direction={['column', 'row']} spacing={4} p={5} justify='center'>
-            <Button type='submit' id='btn-credit-calcul' onClick={() => submitCalcul()}>
+            <Button type='submit' id='btn-credit-calcul' isDisabled={!formState.isValid} onClick={() => submitCalcul()}>
               Calculer
             </Button>
             <Button

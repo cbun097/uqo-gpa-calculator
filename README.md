@@ -6,9 +6,9 @@
 
 ## Fonctionalités
 
-Si vous êtes un(e) nouveau/nouvelle étudiant(e) de l'UQO vous avec la chance de calculer votre moyenne globale selon le nombre de crédits et le résultat désiré.
+Si vous êtes un(e) nouveau/nouvelle étudiant(e) de l'UQO vous avec la chance de calculer votre moyenne globale selon le nombre de crédits et le résultat désirés.
 
-Dans le cas, si vous êtes actuellement un(e) étudiant(e) de l'UQO, à partir de votre relevé de note, vous pouvez entrer les informations des cours afin d'obtenir votre résultat final de votre GPA.
+Dans le cas, si vous êtes actuellement un(e) étudiant(e) de l'UQO, à partir de votre relevé de note et/ou votre horaire de cours, vous pouvez entrer les informations des cours afin d'obtenir votre résultat final de votre GPA approximatif.
 
 ## Stack
 

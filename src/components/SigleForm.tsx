@@ -19,7 +19,7 @@ export const SigleForm: React.FC<ISigleForm> = () => {
   const [form, setForm] = useState<IFormInput>(initialValues);
   const [btnClicked, setBtnClicked] = useState(false);
   const [isFirstSemester, setIsFirstSemester] = useState(false);
-  const { register, handleSubmit, getValues, errors, clearErrors, formState } = useForm<IFormInput>();
+  const { register, handleSubmit, getValues, errors, clearErrors, formState } = useForm<IFormInput>({ mode: 'onChange' });
   const [size, setSize] = useState(0);
   const onSubmit = async (data: IFormInput) => {
     const values: IFormInput = getValues();
@@ -42,7 +42,7 @@ export const SigleForm: React.FC<ISigleForm> = () => {
   return (
     <>
       <Box p={5}>
-        <Text color='gray.500' fontSize='sm'>
+        <Text color='gray.500' fontSize='sm' pb={3}>
           Afin d&#39;obtenir une moyenne approximatif, entrez le sigle du cours qui se retrouve dans votre horaire de cours.
         </Text>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -315,7 +315,7 @@ export const SigleForm: React.FC<ISigleForm> = () => {
             );
           })}
           <Stack direction={['column', 'row']} spacing={4} p={5} justify='center'>
-            <Button type='submit' onClick={() => submitCalcul()}>
+            <Button type='submit' onClick={() => submitCalcul()} isDisabled={!formState.isValid}>
               Calculer
             </Button>
             <Button
